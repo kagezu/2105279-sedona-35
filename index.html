@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="navavigation">
         <img class="navavigation-logo" src="#" alt="Логотип">
         <ul class="navavigation-list">
@@ -38,9 +38,9 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Sedona</h1>
-      <section class="title">
+      <section class="title" data-test="hero">
         <h2 class="visually-hidden">Welcome</h2>
         <img class="title-image" src="#" alt="Welcome to Sedona">
       </section>
@@ -49,7 +49,7 @@
         <p class="cause-header-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
-      <section class="cause">
+      <section class="cause" data-test="advantages">
         <ul class="cause-list">
           <li class="cause-item cause-type-1">
             <h3 class="cause-title">Настоящий городок</h3>
@@ -100,7 +100,7 @@
         </ul>
       </section>
 
-      <section class="quere">
+      <section class="quere" data-test="search">
         <h2 class="quere-title">Заинтересовались?</h2>
         <p class="quere-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
@@ -108,7 +108,7 @@
         <a class="query-button-link button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
-      <section class="subscription">
+      <article class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -117,10 +117,10 @@
             <input class="subscription-submit" type="submit" value="Подписаться">
           </fieldset>
         </form>
-      </section>
+      </article>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">

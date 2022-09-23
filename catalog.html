@@ -40,14 +40,22 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <h1 class="main-title">Каталог</h1>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html"></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
 
       <section class="filter">
-        <h2 class="filter-title">Гостиницы Седоны</h2>
-        <p>>Гостиницы</p>
         <form class="filter-form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="filter-field">
+          <fieldset class="filter-group">
             <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -65,7 +73,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter-field">
+          <fieldset class="filter-group">
             <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -83,7 +91,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filter-field">
+          <fieldset class="filter-group">
             <legend class="filter-legend">Стоимость, ₽:</legend>
             <p class="filter-costs">
               <input type="number" name="cost-min" id="cost-min">
@@ -92,14 +100,14 @@
             <input class="filter-cost" type="range" min="0" max="12000" value=9000 name="cost" id="cost">
 
           </fieldset>
-          <fieldset class="filter-field">
+          <fieldset class="filter-group">
             <button class="filter-btn-submit" type="submit">Применить</button>
             <button class="filter-btn-reset" type="reset">Сбросить</button>
           </fieldset>
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog-housing">
         <h2 class="catalog-title">Гостиницы</h2>
 
       </section>

@@ -39,16 +39,66 @@
     </header>
 
     <main class="main-index">
-      <h1 class="main-title"></h1>
+      <h1 class="main-title">Каталог</h1>
 
       <section class="filter">
         <h2 class="filter-title">Гостиницы Седоны</h2>
-        <form action="#">
+        <p>>Гостиницы</p>
+        <form class="filter-form" method="post" action="https://echo.htmlacademy.ru/">
+          <fieldset class="filter-field">
+            <legend class="filter-legend">Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input class="filter-checkbox" type="checkbox" name="basin" id="basin" checked>
+                <label class="filter-label" for="basin">Бассейн</label>
+              </li>
+              <li class="filter--item">
+                <input class="filter-checkbox" type="checkbox" name="parking" id="parking" checked>
+                <label class="filter-label" for="parking">Парковка</label>
+              </li>
+              <li class="filter-item">
+                <input class="filter-checkbox" type="checkbox" name="wifi" id="wifi">
+                <label class="filter-label" for="wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
 
+          <fieldset class="filter-field">
+            <legend class="filter-legend">Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input class="filter-radio" type="radio" name="housing" value="holel" id="holel" checked>
+                <label class="filter-label" for="holel">Гостиница</label>
+              </li>
+              <li class="filter-item">
+                <input class="filter-radio" type="radio" name="housing" value="motel" id="motel">
+                <label class="filter-label" for="motel">Мотель</label>
+              </li>
+              <li class="filter-item">
+                <input class="filter-radio" type="radio" name="housing" value="apartments" id="apartments">
+                <label class="filter-label" for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter-field">
+            <legend class="filter-legend">Стоимость, ₽:</legend>
+            <p class="filter-costs">
+              <input type="number" name="cost-min" id="cost-min">
+              <input type="number" name="cost-max" id="cost-max">
+            </p>
+            <input class="filter-cost" type="range" min="0" max="12000" value=9000 name="cost" id="cost">
+
+          </fieldset>
+          <fieldset class="filter-field">
+            <button class="filter-btn-submit" type="submit">Применить</button>
+            <button class="filter-btn-reset" type="reset">Сбросить</button>
+          </fieldset>
         </form>
       </section>
 
       <section class="catalog">
+        <h2 class="catalog-title">Гостиницы</h2>
 
       </section>
 

@@ -107,7 +107,7 @@
         </form>
       </section>
 
-      <section class="catalog-housing">
+      < class="catalog-housing">
         <header class="catalog-header">
           <h2 class="visually-hidden">Список отелей с фильтрами</h2>
           <p class="catalog-count">Найдено гостиниц: 38</p>
@@ -127,8 +127,8 @@
           </a>
         </header>
 
-        <ul class="catalog-card-list">
-          <li class="catalog-card-item">
+        <div class="catalog-card-list">
+          <article class="catalog-card-item">
             <img class="catalog-card-image" src="#" alt="Пещера">
             <h3 class="catalog-card-title">Amara Resort & Spa</h3>
             <p class="catalog-card-type">Гостиница
@@ -136,16 +136,11 @@
             </p>
             <button class="catalog-card-btn-details">подробнее</button>
             <button class="catalog-card-btn-favorite">в избранное</button>
-            <ul class="catalog-card-rate-stars">
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-            </ul>
+            <p class="catalog-card-rate-stars">★★★★</p>
             <p class="catalog-card-rate">Рейтинг: 8,5</p>
-          </li>
+          </article>
 
-          <li class="catalog-card-item">
+          <article class="catalog-card-item">
             <img class="catalog-card-image" src="#" alt="Скалы и радуга">
             <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
             <p class="catalog-card-type">Гостиница
@@ -153,16 +148,11 @@
             </p>
             <button class="catalog-card-btn-details">подробнее</button>
             <button class="catalog-card-btn-favorite">в избранное</button>
-            <ul class="catalog-card-rate-stars">
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-            </ul>
+            <p class="catalog-card-rate-stars">★★★★</p>
             <p class="catalog-card-rate">Рейтинг: 9,2</p>
-          </li>
+          </article>
 
-          <li class="catalog-card-item">
+          <article class="catalog-card-item">
             <img class="catalog-card-image" src="#" alt="Скалы и небо">
             <h3 class="catalog-card-title">Desert Quail Inn</h3>
             <p class="catalog-card-type">Гостиница
@@ -170,15 +160,11 @@
             </p>
             <button class="catalog-card-btn-details">подробнее</button>
             <button class="catalog-card-btn-favorite">в избранное</button>
-            <ul class="catalog-card-rate-stars">
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-            </ul>
+            <p class="catalog-card-rate-stars">★★★</p>
             <p class="catalog-card-rate">Рейтинг: 6,9</p>
-          </li>
+          </article>
 
-          <li class="catalog-card-item">
+          <article class="catalog-card-item">
             <img class="catalog-card-image" src="#" alt="Скалы и звёзды">
             <h3 class="catalog-card-title">GreenTree Inn</h3>
             <p class="catalog-card-type">Гостиница
@@ -186,44 +172,29 @@
             </p>
             <button class="catalog-card-btn-details">подробнее</button>
             <button class="catalog-card-btn-favorite">в избранное</button>
-            <ul class="catalog-card-rate-stars">
-              <li class="catalog-card-rate-star">★</li>
-              <li class="catalog-card-rate-star">★</li>
-            </ul>
+            <p class="catalog-card-rate-stars">★★</p>
             <p class="catalog-card-rate">Рейтинг: 5,0</p>
-          </li>
-        </ul>
+          </article>
+        </div>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <p class="pagination-space">...</p>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-      </section>
+        <div class="pagination">
+          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link" href="#">2</a>
+          <a class="pagination-link" href="#">3</a>
+          <a class="pagination-link" href="#">4</a>
+          <p class="pagination-space">...</p>
+          <a class="pagination-link" href="#">10</a>
+        </div>
+        </section>
 
-      <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
-          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
-          <input class="subscription-submit" type="submit" value="Подписаться">
-        </form>
-      </section>
+        <section class="subscription">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
+            <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="subscription-submit" type="submit" value="Подписаться">
+          </form>
+        </section>
     </main>
 
     <footer class="footer" data-test="footer">

@@ -59,19 +59,16 @@
             <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <label class="filter-label">
-                  <input class="filter-checkbox" type="checkbox" name="basin" checked>
-                  Бассейн</label>
-              </li>
-              <li class="filter--item">
-                <label class="filter-label">
-                  <input class="filter-checkbox" type="checkbox" name="parking" checked>
-                  Парковка</label>
+                <input class="filter-checkbox" type="checkbox" name="basin" id="basin" checked>
+                <label class="filter-label" for="basin">Бассейн</label>
               </li>
               <li class="filter-item">
-                <label class="filter-label">
-                  <input class="filter-checkbox" type="checkbox" name="wifi">
-                  Wi-Fi</label>
+                <input class="filter-checkbox" type="checkbox" name="parking" id="parking" checked>
+                <label class="filter-label" for="parking">Парковка</label>
+              </li>
+              <li class="filter-item">
+                <input class="filter-checkbox" type="checkbox" name="wifi" id="wifi">
+                <label class="filter-label" for="wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -80,19 +77,16 @@
             <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
-                <label class="filter-label">
-                  <input class="filter-radio" type="radio" name="housing" value="holel" checked>
-                  Гостиница</label>
+                <input class="filter-radio" type="radio" name="housing" value="hotel" id="hotel" checked>
+                <label class="filter-label" for="hotel">Гостиница</label>
               </li>
               <li class="filter-item">
-                <label class="filter-label">
-                  <input class="filter-radio" type="radio" name="housing" value="motel">
-                  Мотель</label>
+                <input class="filter-radio" type="radio" name="housing" value="motel" id="motel">
+                <label class="filter-label" for="motel">Мотель</label>
               </li>
               <li class="filter-item">
-                <label class="filter-label">
-                  <input class="filter-radio" type="radio" name="housing" value="apartments">
-                  Апартаменты</label>
+                <input class="filter-radio" type="radio" name="housing" value="apartments" id="apartments">
+                <label class="filter-label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -103,9 +97,9 @@
               <input type="number" name="cost-min" id="cost-min">
               <input type="number" name="cost-max" id="cost-max">
             </p>
-            <input class="filter-cost" type="range" min="0" max="12000" value=9000 name="cost" id="cost">
-
+            <div class="filter-costs-range"></div>
           </fieldset>
+
           <fieldset class="filter-group">
             <button class="filter-btn-submit" type="submit">Применить</button>
             <button class="filter-btn-reset" type="reset">Сбросить</button>

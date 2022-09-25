@@ -54,6 +54,7 @@
       </header>
 
       <section class="filter">
+        <h2 class="visually-hidden">Фильтрация предложений</h2>
         <form class="filter-form" method="post" action="https://echo.htmlacademy.ru/">
           <fieldset class="filter-group">
             <legend class="filter-legend">Инфраструктура:</legend>
@@ -107,7 +108,7 @@
         </form>
       </section>
 
-      < class="catalog-housing">
+      <section class="catalog-housing">
         <header class="catalog-header">
           <h2 class="visually-hidden">Список отелей с фильтрами</h2>
           <p class="catalog-count">Найдено гостиниц: 38</p>
@@ -134,10 +135,11 @@
             <p class="catalog-card-type">Гостиница
               <span class="catalog-card-title">От 4000 ₽</span>
             </p>
-            <button class="catalog-card-btn-details">подробнее</button>
-            <button class="catalog-card-btn-favorite">в избранное</button>
-            <p class="catalog-card-rate-stars">★★★★</p>
-            <p class="catalog-card-rate">Рейтинг: 8,5</p>
+            <a class="catalog-card-btn-details">подробнее</a>
+            <a class="catalog-card-btn-favorite">в избранное</a>
+            <p class="catalog-card-rate-stars">★★★★
+              <span class="catalog-card-rate">Рейтинг: 8,5</span>
+            </p>
           </article>
 
           <article class="catalog-card-item">
@@ -146,10 +148,11 @@
             <p class="catalog-card-type">Гостиница
               <span class="catalog-card-title">От 5000 ₽</span>
             </p>
-            <button class="catalog-card-btn-details">подробнее</button>
-            <button class="catalog-card-btn-favorite">в избранное</button>
-            <p class="catalog-card-rate-stars">★★★★</p>
-            <p class="catalog-card-rate">Рейтинг: 9,2</p>
+            <a class="catalog-card-btn-details">подробнее</a>
+            <a class="catalog-card-btn-favorites">в избранном</a>
+            <p class="catalog-card-rate-stars">★★★★
+              <span class="catalog-card-rate">Рейтинг: 9,2</span>
+            </p>
           </article>
 
           <article class="catalog-card-item">
@@ -158,10 +161,11 @@
             <p class="catalog-card-type">Гостиница
               <span class="catalog-card-title">От 2500 ₽</span>
             </p>
-            <button class="catalog-card-btn-details">подробнее</button>
-            <button class="catalog-card-btn-favorite">в избранное</button>
-            <p class="catalog-card-rate-stars">★★★</p>
-            <p class="catalog-card-rate">Рейтинг: 6,9</p>
+            <a class="catalog-card-btn-details">подробнее</a>
+            <a class="catalog-card-btn-favorite">в избранное</a>
+            <p class="catalog-card-rate-stars">★★★
+              <span class="catalog-card-rate">Рейтинг: 6,9</span>
+            </p>
           </article>
 
           <article class="catalog-card-item">
@@ -170,10 +174,11 @@
             <p class="catalog-card-type">Гостиница
               <span class="catalog-card-title">От 1500 ₽</span>
             </p>
-            <button class="catalog-card-btn-details">подробнее</button>
-            <button class="catalog-card-btn-favorite">в избранное</button>
-            <p class="catalog-card-rate-stars">★★</p>
-            <p class="catalog-card-rate">Рейтинг: 5,0</p>
+            <a class="catalog-card-btn-details">подробнее</a>
+            <a class="catalog-card-btn-favorite">в избранное</a>
+            <p class="catalog-card-rate-stars">★★
+              <span class="catalog-card-rate">Рейтинг: 5,0</span>
+            </p>
           </article>
         </div>
 
@@ -182,19 +187,19 @@
           <a class="pagination-link" href="#">2</a>
           <a class="pagination-link" href="#">3</a>
           <a class="pagination-link" href="#">4</a>
-          <p class="pagination-space">...</p>
+          <span class="pagination-space">...</span>
           <a class="pagination-link" href="#">10</a>
         </div>
-        </section>
+      </section>
 
-        <section class="subscription">
-          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
-            <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
-            <input class="subscription-submit" type="submit" value="Подписаться">
-          </form>
-        </section>
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
+          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="subscription-submit" type="submit" value="Подписаться">
+        </form>
+      </section>
     </main>
 
     <footer class="footer" data-test="footer">

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400l;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  visibility: hidden;
+}
+
+
+/* Шрифты */
+
+/* uppercase */
+.navigation-button-link,
+.filter-btn-submit,
+.filter-btn-reset,
+.advantages-header-title,
+.query-title,
+.subscription-title,
+.catalog-count,
+.advantages-title,
+.subscription-submit,
+.query-button-link,
+.catalog-card-rate {
+  text-transform: uppercase;
+}
+
+.navigation-button-link,
+.filter-btn-submit,
+.filter-btn-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: none;
+}
+
+.navigation-link,
+.filter-legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: none;
+}
+
+.advantages-header-title,
+.query-title,
+.subscription-title,
+.catalog-count,
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.advantages-header-text,
+.query-text,
+.subscription-text,
+.pagination-space {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.subscription-email {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscription-submit,
+.query-button-link,
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration-line: none;
+}
+
+.footer-contact-tell {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-card-rate {
+  font-size: 16px;
+  line-height: 20px;
+}

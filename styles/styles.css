@@ -35,6 +35,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  background: #ffffff;
 }
 
 .visually-hidden {
@@ -47,23 +49,7 @@ body {
   visibility: hidden;
 }
 
-
 /* Шрифты */
-
-/* uppercase */
-.navigation-button-link,
-.filter-btn-submit,
-.filter-btn-reset,
-.advantages-header-title,
-.query-title,
-.subscription-title,
-.catalog-count,
-.advantages-title,
-.subscription-submit,
-.query-button-link,
-.catalog-card-rate {
-  text-transform: uppercase;
-}
 
 .navigation-button-link,
 .filter-btn-submit,
@@ -72,6 +58,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: none;
+  text-transform: uppercase;
 }
 
 .navigation-link,
@@ -82,14 +69,27 @@ body {
   text-decoration-line: none;
 }
 
+.count-likes {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+
 .advantages-header-title,
 .query-title,
 .subscription-title,
-.catalog-count,
-.catalog-card-title {
+.catalog-count {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .advantages-header-text,
@@ -104,10 +104,10 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 .subscription-email {
-  font-size: 18px;
   line-height: 24px;
 }
 
@@ -118,6 +118,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-decoration-line: none;
+  text-transform: uppercase;
 }
 
 .footer-contact-tell {
@@ -139,4 +140,48 @@ body {
 .catalog-card-rate {
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Цвет текста */
+
+.navigation a {
+  color: #000000;
+}
+
+.navigation .count-likes,
+.catalog-card-btn-favorites {
+  color: #ffffff;
+  background: #7DB54F;
+}
+
+.navigation .navigation-button-link,
+.query-button-link,
+.catalog-card-btn-details {
+  color: #ffffff;
+  background: #756157;
+}
+
+
+.subscription-submit,
+.filter-btn-submit,
+.catalog-card-btn-favorite,
+.pagination a,
+.advantages-item-image {
+  color: #ffffff;
+  background: #82B3D3;
+}
+
+.pagination .pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.main .subscription,
+.inner-header,
+.breadcrumbs-link,
+.filter,
+.filter-btn-reset {
+  color: #ffffff;
+  background: #4382a1;
 }

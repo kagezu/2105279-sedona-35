@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400l;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  visibility: hidden;
+}
+
+/* Шрифты */
+
+.navigation-button-link,
+.filter-btn-submit,
+.filter-btn-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+.navigation-link,
+.filter-legend {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: none;
+}
+
+.count-likes {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+
+.advantages-header-title,
+.query-title,
+.subscription-title,
+.catalog-count {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-header-text,
+.query-text,
+.subscription-text,
+.pagination-space {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.subscription-email {
+  line-height: 24px;
+}
+
+.subscription-submit,
+.query-button-link,
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+.footer-contact-tell {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-card-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Цвет и фон текста */
+
+.navigation a {
+  color: #000000;
+}
+
+.navigation .count-likes,
+.catalog-card-btn-favorites {
+  color: #ffffff;
+  background: #7DB54F;
+}
+
+.navigation .navigation-button-link,
+.query-button-link,
+.catalog-card-btn-details {
+  color: #ffffff;
+  background: #756157;
+}
+
+
+.subscription-submit,
+.filter-btn-submit,
+.catalog-card-btn-favorite,
+.pagination a,
+.advantages-item-image {
+  color: #ffffff;
+  background: #82B3D3;
+}
+
+.pagination .pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.main .subscription
+
+/* .inner-header,
+.breadcrumbs-link,
+.filter,
+.filter-btn-reset */
+  {
+  color: #ffffff;
+  background: #4382a1;
+}
+
+/* Фоны */
+
+.title {
+  background: #4382a1;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+}
+
+.advantages-item-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-medium {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-icon-housing {
+  background-image: url('../images/icon/home.svg');
+  background-repeat: no-repeat;
+}
+
+.advantages-icon-food {
+  background-image: url('../images/icon/food.svg');
+  background-repeat: no-repeat;
+}
+
+.advantages-icon-souvenirs {
+  background-image: url('../images/icon/present.svg');
+  background-repeat: no-repeat;
+}
+
+.main .subscription {
+  background-image: url('../images/index-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.social-vk {
+  background-image: url('../images/icon/vk.svg');
+}
+
+.social-telegram {
+  background-image: url('../images/icon/telegram.svg');
+}
+
+.social-youtube {
+  background-image: url('../images/icon/youtube.svg');
+}
+
+.hero {
+  color: #ffffff;
+  background: #4382a1;
+  background-image: url('../images/catalog-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.view-cards {
+  background-image: url('../images/icon/card.svg');
+}
+
+.view-card {
+  background-image: url('../images/icon/card.svg');
+}
+
+.view-card-list {
+  background-image: url('../images/icon/card-list.svg');
+}

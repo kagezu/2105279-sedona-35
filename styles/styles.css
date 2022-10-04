@@ -143,7 +143,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Цвет текста */
+/* Цвет и фон текста */
 
 .navigation a {
   color: #000000;
@@ -177,11 +177,80 @@ body {
   background: #F2F2F2;
 }
 
-.main .subscription,
-.inner-header,
+.main .subscription
+
+/* .inner-header,
 .breadcrumbs-link,
 .filter,
-.filter-btn-reset {
+.filter-btn-reset */
+  {
   color: #ffffff;
   background: #4382a1;
+}
+
+/* Фоны */
+
+.title {
+  background: #4382a1;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+}
+
+.advantages-item-light {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-medium {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-icon-housing {
+  background-image: url('../images/icon/home.svg');
+  background-repeat: no-repeat;
+}
+
+.advantages-icon-food {
+  background-image: url('../images/icon/food.svg');
+  background-repeat: no-repeat;
+}
+
+.advantages-icon-souvenirs {
+  background-image: url('../images/icon/present.svg');
+  background-repeat: no-repeat;
+}
+
+.main .subscription {
+  background-image: url('../images/index-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.social-vk {
+  background-image: url('../images/icon/vk.svg');
+}
+
+.social-telegram {
+  background-image: url('../images/icon/telegram.svg');
+}
+
+.social-youtube {
+  background-image: url('../images/icon/youtube.svg');
+}
+
+.hero {
+  color: #ffffff;
+  background: #4382a1;
+  background-image: url('../images/catalog-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.view-cards {
+  background-image: url('../images/icon/card.svg');
+}
+
+.view-card {
+  background-image: url('../images/icon/card.svg');
+}
+
+.view-card-list {
+  background-image: url('../images/icon/card-list.svg');
 }

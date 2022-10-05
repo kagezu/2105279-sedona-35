@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400l;
+  font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
@@ -14,23 +14,8 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -54,6 +39,7 @@ body {
 .navigation-button-link,
 .filter-btn-submit,
 .filter-btn-reset {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -70,7 +56,6 @@ body {
 }
 
 .count-likes {
-  font-weight: 400;
   font-size: 10px;
   line-height: 10px;
 }
@@ -80,7 +65,6 @@ body {
 .query-title,
 .subscription-title,
 .catalog-count {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -108,12 +92,14 @@ body {
 }
 
 .subscription-email {
+  font-family: inherit;
   line-height: 24px;
 }
 
 .subscription-submit,
 .query-button-link,
 .pagination-link {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -177,17 +163,6 @@ body {
   background: #F2F2F2;
 }
 
-.main .subscription
-
-/* .inner-header,
-.breadcrumbs-link,
-.filter,
-.filter-btn-reset */
-  {
-  color: #ffffff;
-  background: #4382a1;
-}
-
 /* Фоны */
 
 .title {
@@ -219,7 +194,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.main .subscription {
+.subscription-background {
+  color: #ffffff;
+  background: #4382a1;
   background-image: url('../images/index-background.jpg');
   background-repeat: no-repeat;
 }

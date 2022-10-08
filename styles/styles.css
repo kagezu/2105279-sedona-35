@@ -252,3 +252,35 @@ body {
 .view-card-list {
   background-image: url("../images/icon/card-list.svg");
 }
+
+/* Сетки */
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-logo-link {
+  height: 138px;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.navigation-user {
+  width: 268px;
+  margin: 0;
+  padding: 0;
+}

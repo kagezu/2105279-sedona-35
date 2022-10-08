@@ -36,15 +36,18 @@ body {
 
 /* Шрифты */
 
-.navigation-button-link,
-.filter-btn-submit,
-.filter-btn-reset {
+.button {
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration-line: none;
   text-transform: uppercase;
+}
+
+.navigation-button-link,
+.filter-button-submit,
+.filter-button-reset {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navigation-link,
@@ -60,11 +63,7 @@ body {
   line-height: 10px;
 }
 
-
-.advantages-header-title,
-.query-title,
-.subscription-title,
-.catalog-count {
+.section-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -99,12 +98,8 @@ body {
 .subscription-submit,
 .query-button-link,
 .pagination-link {
-  font-family: inherit;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-decoration-line: none;
-  text-transform: uppercase;
 }
 
 .footer-contact-tell {
@@ -136,7 +131,7 @@ body {
 }
 
 .navigation .count-likes,
-.catalog-card-btn-favorites {
+.catalog-card-button-favorites {
   color: #ffffff;
   background: #7DB54F;
 }
@@ -150,12 +145,17 @@ body {
 
 
 .subscription-submit,
-.filter-btn-submit,
-.catalog-card-btn-favorite,
+.filter-button-submit,
+.catalog-card-button-favorite,
 .pagination a,
 .advantages-item-image {
   color: #ffffff;
   background: #82B3D3;
+}
+
+.filter-button-reset {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .pagination .pagination-current {

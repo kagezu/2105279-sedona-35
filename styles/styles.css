@@ -1,3 +1,5 @@
+/* Подключение шрифтов */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -12,6 +14,13 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+/* Нормализация */
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 html {
@@ -50,6 +59,7 @@ body {
 /* Шрифты */
 
 .button {
+  text-align: center;
   font-family: inherit;
   font-weight: 700;
   text-decoration-line: none;
@@ -77,6 +87,7 @@ body {
 }
 
 .section-title {
+  text-align: center;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -92,12 +103,13 @@ body {
 .query-text,
 .subscription-text,
 .pagination-space {
+  text-align: center;
   font-size: 22px;
   line-height: 26px;
 }
 
 .advantages-title {
-  font-weight: 700;
+  text-align: center;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -255,6 +267,8 @@ body {
 
 /* Сетки */
 
+/* Хедер */
+
 .header {
   width: 1200px;
   margin: 0 auto;
@@ -273,7 +287,7 @@ body {
 }
 
 .navigation-list {
-  width: 500px;
+  min-width: 340px;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -284,3 +298,56 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Главная страница */
+
+.main,
+.hero,
+.advantages {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-header {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-item-image {
+  display: flex;
+  width: 1200px;
+}
+
+.advantages-item {
+  width: 400px;
+}
+
+.query {
+  width: 600px;
+  margin: 0 auto
+}
+
+.query-button-link {
+  display: block;
+}
+
+.subscription-form {
+  text-align: center;
+}
+
+/* Каталог */
+
+/* Футер */

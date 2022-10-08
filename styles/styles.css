@@ -23,13 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background: #ffffff;
+  background: #F2F2F2;
 }
 
 .main,
@@ -146,14 +146,14 @@ body {
 .navigation .count-likes,
 .catalog-card-button-favorites {
   color: #ffffff;
-  background: #7DB54F;
+  background-color: #7DB54F;
 }
 
 .navigation .navigation-button-link,
 .query-button-link,
 .catalog-card-btn-details {
   color: #ffffff;
-  background: #756157;
+  background-color: #756157;
 }
 
 
@@ -163,7 +163,7 @@ body {
 .pagination a,
 .advantages-item-image {
   color: #ffffff;
-  background: #82B3D3;
+  background-color: #82B3D3;
 }
 
 .filter-button-reset {
@@ -173,74 +173,82 @@ body {
 
 .pagination .pagination-current {
   color: #000000;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 /* Фоны */
 
-.title {
-  background: #4382a1;
-  background-image: url('../images/hero.jpg');
-  background-repeat: no-repeat;
+.header,
+.main,
+.main-inner,
+.footer {
+  background-color: #ffffff;
+}
+
+.hero {
+  background-color: #4382a1;
+  background-image: url("../images/hero-layer.svg"), url("../images/hero.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom, top;
 }
 
 .advantages-item-light {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-medium {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-icon-housing {
-  background-image: url('../images/icon/home.svg');
+  background-image: url("../images/icon/home.svg");
   background-repeat: no-repeat;
 }
 
 .advantages-icon-food {
-  background-image: url('../images/icon/food.svg');
+  background-image: url("../images/icon/food.svg");
   background-repeat: no-repeat;
 }
 
 .advantages-icon-souvenirs {
-  background-image: url('../images/icon/present.svg');
+  background-image: url("../images/icon/present.svg");
   background-repeat: no-repeat;
 }
 
 .subscription-background {
   color: #ffffff;
-  background: #4382a1;
-  background-image: url('../images/index-background.jpg');
+  background-color: #4382a1;
+  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
 }
 
 .social-vk {
-  background-image: url('../images/icon/vk.svg');
+  background-image: url("../images/icon/vk.svg");
 }
 
 .social-telegram {
-  background-image: url('../images/icon/telegram.svg');
+  background-image: url("../images/icon/telegram.svg");
 }
 
 .social-youtube {
-  background-image: url('../images/icon/youtube.svg');
+  background-image: url("../images/icon/youtube.svg");
 }
 
-.hero {
+.title {
   color: #ffffff;
-  background: #4382a1;
-  background-image: url('../images/catalog-background.jpg');
+  background-color: #4382a1;
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
 
 .view-cards {
-  background-image: url('../images/icon/card.svg');
+  background-image: url("../images/icon/card.svg");
 }
 
 .view-card {
-  background-image: url('../images/icon/card.svg');
+  background-image: url("../images/icon/card.svg");
 }
 
 .view-card-list {
-  background-image: url('../images/icon/card-list.svg');
+  background-image: url("../images/icon/card-list.svg");
 }

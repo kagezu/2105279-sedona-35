@@ -68,7 +68,11 @@ body {
 
 .navigation-button-link,
 .filter-button-submit,
-.filter-button-reset {
+.filter-button-reset,
+.catalog-card-rate,
+.catalog-card-button-details,
+.catalog-card-button-favorites,
+.catalog-card-button-favorite {
   font-size: 16px;
   line-height: 20px;
 }
@@ -144,9 +148,14 @@ body {
   line-height: 21px;
 }
 
+.catalog-card-button-details,
+.catalog-card-button-favorites,
+.catalog-card-button-favorite {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .catalog-card-rate {
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -164,7 +173,7 @@ body {
 
 .navigation .navigation-button-link,
 .query-button-link,
-.catalog-card-btn-details {
+.catalog-card-button-details {
   color: #ffffff;
   background-color: #756157;
 }

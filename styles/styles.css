@@ -59,11 +59,11 @@ body {
 /* Шрифты */
 
 .button {
-  text-align: center;
   font-family: inherit;
   font-weight: 700;
   text-decoration-line: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .navigation-button-link,
@@ -237,17 +237,20 @@ body {
 
 .social-vk {
   background-image: url("../images/icon/vk.svg");
+  background-repeat: no-repeat;
 }
 
 .social-telegram {
   background-image: url("../images/icon/telegram.svg");
+  background-repeat: no-repeat;
 }
 
 .social-youtube {
   background-image: url("../images/icon/youtube.svg");
+  background-repeat: no-repeat;
 }
 
-.title {
+.filter-wrapper {
   color: #ffffff;
   background-color: #4382a1;
   background-image: url("../images/catalog-background.jpg");
@@ -256,14 +259,17 @@ body {
 
 .view-cards {
   background-image: url("../images/icon/card.svg");
+  background-repeat: no-repeat;
 }
 
 .view-card {
   background-image: url("../images/icon/card.svg");
+  background-repeat: no-repeat;
 }
 
 .view-card-list {
   background-image: url("../images/icon/card-list.svg");
+  background-repeat: no-repeat;
 }
 
 /* Сетки */
@@ -331,11 +337,11 @@ body {
 
 .query {
   width: 600px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .query-button-link {
-  display: block;
+  margin: 0 auto;
 }
 
 .subscription-form {
@@ -343,6 +349,85 @@ body {
 }
 
 /* Каталог */
+
+.filter-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-group-select {
+  width: 150px;
+}
+
+.filter-group-costs {
+  width: 228px;
+  margin-left: 97px;
+}
+
+.filter-group-button {
+  width: 191px;
+  margin: 0;
+}
+
+.catalog-housing {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-header {
+  display: flex;
+}
+
+.catalog-count {
+  margin: 0;
+  margin-right: 192px;
+}
+
+.catalog-select {
+  width: 292px;
+  margin: 0;
+  margin-right: 62px;
+}
+
+.catalog-header a {
+  width: 48px;
+  margin: 0;
+  margin-left: 8px;
+}
+
+.catalog-card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.catalog-card-item {
+  margin: 0;
+  padding: 0 20px;
+
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination-link,
+.pagination-space {
+  width: 60px;
+  margin: 0;
+  margin-right: 8px;
+}
 
 /* Футер */
 

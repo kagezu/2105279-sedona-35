@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header wrapper">
       <nav class="navigation">
         <a class="navigation-logo-link" href="index.html">
           <img class="navigation-logo" src="./images/logo/logo-sedona.png" width="140" height="70" alt="Логотип города Седона">
@@ -43,8 +43,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <div class="title">
+    <main class="main-inner wrapper">
+      <div class="filter-wrapper">
         <header class="inner-header">
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -60,7 +60,7 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтрация предложений</h2>
           <form class="filter-form" method="post" action="https://echo.htmlacademy.ru/">
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group-select">
               <legend class="filter-legend">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -78,7 +78,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group-select">
               <legend class="filter-legend">Тип жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -96,7 +96,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group-costs">
               <legend class="filter-legend">Стоимость, ₽:</legend>
               <p class="filter-costs">
                 <input type="number" name="cost-min" id="cost-min">
@@ -107,7 +107,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group-button">
               <button class="filter-button-submit button" type="submit">Применить</button>
               <button class="filter-button-reset button" type="reset">Сбросить</button>
             </fieldset>
@@ -187,6 +187,8 @@
             </p>
           </article>
         </div>
+
+        <hr class="catalog-line">
 
         <div class="pagination">
           <a class="pagination-link button pagination-current">1</a>

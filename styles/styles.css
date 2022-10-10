@@ -427,6 +427,7 @@ img {
 
 .advantages-item-location {
   padding-top: 103px;
+
 }
 
 .advantages-item-convenience {
@@ -435,7 +436,7 @@ img {
 
 .advantages-title {
   margin: 0;
-  padding: 0 25px;
+  padding: 0 29px;
 }
 
 .decorative-line {
@@ -445,13 +446,13 @@ img {
 .advantages-text {
   margin: 0;
   margin-top: 30px;
-
 }
 
 .query {
   width: 600px;
   margin: 0 auto;
-  padding: 96px 304px;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .query-title {
@@ -461,7 +462,7 @@ img {
 
 .query-text {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 62px;
 }
 
 .query-button-link {
@@ -472,7 +473,7 @@ img {
 .subscription {
   min-height: 415px;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 96px;
   box-sizing: border-box;
 }
 
@@ -568,7 +569,6 @@ img {
 .catalog-card-item {
   margin: 0;
   padding: 0 20px;
-
 }
 
 .pagination {

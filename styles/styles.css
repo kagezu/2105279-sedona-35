@@ -287,6 +287,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.footer-social a {
+  background-position: center;
+}
+
 .filter-wrapper {
   color: #ffffff;
   background-color: #4382a1;
@@ -371,7 +375,6 @@ img {
   margin: 14px 0;
   margin-left: 20px;
   padding: 8px 34px;
-
 }
 
 /* Главная страница */
@@ -427,7 +430,6 @@ img {
 
 .advantages-item-location {
   padding-top: 103px;
-
 }
 
 .advantages-item-convenience {
@@ -589,6 +591,8 @@ img {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  padding: 46px 70px 24px 70px;
+  align-items: flex-end;
 }
 
 .footer-social {
@@ -599,6 +603,7 @@ img {
 
 .button-social {
   width: 47px;
+  height: 40px;
   margin: 0;
 }
 
@@ -607,10 +612,22 @@ img {
   margin: 0;
 }
 
-.footer-logo {
-  width: 115px;
+.footer-contact-tell {
   margin: 0;
 }
+
+.footer-logo {
+  min-width: 115px;
+  margin: 0;
+}
+
+.footer-logo-link {
+  display: block;
+  min-width: 115px;
+  min-height: 36px;
+
+}
+
 
 /* Декоративные элементы */
 

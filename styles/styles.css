@@ -161,6 +161,19 @@ img {
   line-height: 40px;
 }
 
+.filter-costs input {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter-group-button button {
+  font: inherit;
+  font-weight: 700;
+}
+
+
 .inner-title {
   font-weight: 700;
   font-size: 60px;
@@ -495,7 +508,6 @@ img {
 }
 
 .subscription-email {
-  /* font: inherit; */
   width: 452px;
   height: 52px;
 }
@@ -506,10 +518,34 @@ img {
 
 /* Каталог */
 
+.main-inner {
+  margin-top: -10px;
+}
+
 .filter-wrapper {
-  width: 1060px;
+  min-height: 412px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 35px 70px 0 70px;
+}
+
+.inner-title {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
 }
 
 .filter-form {
@@ -517,24 +553,69 @@ img {
   justify-content: space-between;
 }
 
+.filter-form ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .filter-group {
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+.filter-legend {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.filter-item {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.filter-costs {
+  margin: 0;
+}
+
+.filter-costs input {
+  font: inherit;
+  width: 143px;
+  height: 48px;
+  box-sizing: border-box;
 }
 
 .filter-group-select {
-  width: 150px;
+  min-width: 150px;
 }
 
 .filter-group-costs {
-  width: 228px;
-  margin-left: 97px;
+  min-width: 228px;
+  margin-left: 85px;
 }
 
 .filter-group-button {
   width: 191px;
   margin: 0;
+  padding: 0;
+  padding-top: 56px;
+  text-align: center;
 }
+
+.filter-button-submit {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 8px 50px;
+  border: none;
+}
+
+.filter-button-reset {
+  margin: 0;
+  border: none;
+}
+
+
 
 .catalog-housing {
   width: 1060px;

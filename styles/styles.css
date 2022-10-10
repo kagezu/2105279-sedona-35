@@ -322,16 +322,43 @@ img {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   min-width: 340px;
+  max-width: 500px;
   margin: 0;
   padding: 0;
   margin-right: auto;
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: block;
+  margin: 0;
+  padding: 20px 16px;
 }
 
 .navigation-user {
-  width: 268px;
+  display: flex;
+  min-width: 268px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user-link {
+  display: block;
+  margin: 0;
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.navigation-button-link {
+  display: block;
+  margin: 14px 0;
+  margin-left: 20px;
+  padding: 8px 34px;
+
 }
 
 /* Главная страница */

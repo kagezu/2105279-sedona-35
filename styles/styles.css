@@ -192,6 +192,10 @@ img {
   text-transform: uppercase;
 }
 
+.catalog-select {
+  font: inherit;
+}
+
 .catalog-card-rate {
   text-transform: uppercase;
 }
@@ -228,6 +232,16 @@ img {
 .filter-button-reset {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.catalog-select {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.catalog-card-rate {
+  color: #333333;
+  background-color: #F2F2F2;
 }
 
 .pagination .pagination-current {
@@ -300,10 +314,6 @@ img {
   background-repeat: no-repeat;
 }
 
-.footer-social a {
-  background-position: center;
-}
-
 .filter-wrapper {
   color: #ffffff;
   background-color: #4382a1;
@@ -324,6 +334,11 @@ img {
 .view-card-list {
   background-image: url("../images/icon/card-list.svg");
   background-repeat: no-repeat;
+}
+
+.footer-social a,
+.catalog-header a {
+  background-position: center;
 }
 
 /* Сетки */
@@ -615,30 +630,29 @@ img {
   border: none;
 }
 
-
-
-.catalog-housing {
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .catalog-header {
   display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 50px 70px 40px 70px;
 }
 
 .catalog-count {
   margin: 0;
-  margin-right: 192px;
+  margin-right: auto;
+  align-self: center;
 }
 
 .catalog-select {
   width: 292px;
+  box-sizing: border-box;
   margin: 0;
   margin-right: 62px;
 }
 
 .catalog-header a {
   width: 48px;
+  height: 48px;
   margin: 0;
   margin-left: 8px;
 }
@@ -647,22 +661,68 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 40px;
 }
 
 .catalog-card-item {
   margin: 0;
-  padding: 0 20px;
+  padding: 20px;
+  outline: 1px solid #E6E6E6;
+}
+
+.catalog-card-title {
+  margin: 14px 0 15px 0;
+}
+
+.catalog-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
+
+.catalog-card-grid p {
+  width: 140px;
+  height: 21px;
+  margin: 0
+}
+
+.catalog-card-cost {
+  text-align: end;
+}
+
+.card-button {
+  padding: 8px 0 8px 0;
+  text-align: center;
+}
+
+.catalog-card-rate {
+  padding: 8px 0 8px 0;
+  text-align: center;
 }
 
 .pagination {
   display: flex;
+  width: 1060px;
+  margin: 0 auto 60px auto;
+  text-align: center;
 }
 
 .pagination-link,
 .pagination-space {
   width: 60px;
+  height: 60px;
   margin: 0;
   margin-right: 8px;
+  padding-top: 11px;
+  box-sizing: border-box;
+}
+
+.pagination-space {
+  padding-top: 16px;
 }
 
 /* Футер */
@@ -708,7 +768,6 @@ img {
   min-height: 36px;
 
 }
-
 
 /* Декоративные элементы */
 

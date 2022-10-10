@@ -11,6 +11,7 @@
   Главная страница
   Каталог
   Футер
+Декоративные элементы
 */
 
 /* Подключение шрифтов */
@@ -150,6 +151,10 @@ img {
   line-height: 36px;
 }
 
+.subscription-email {
+  font: inherit;
+}
+
 .footer-contact-tell {
   text-align: center;
   font-size: 40px;
@@ -256,6 +261,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.advantages-item {
+  background-position: center 80px;
+}
+
 .subscription-background {
   color: #ffffff;
   background-color: #4382a1;
@@ -308,6 +317,10 @@ img {
 }
 
 /* Хедер */
+
+.navigation-logo-link {
+  z-index: 1;
+}
 
 .navigation {
   width: 1060px;
@@ -363,6 +376,14 @@ img {
 
 /* Главная страница */
 
+.main {
+  margin-top: -10px;
+}
+
+.hero {
+  padding: 51px 0 82px 0;
+}
+
 .hero-image {
   display: block;
   margin: 0 auto;
@@ -371,6 +392,16 @@ img {
 .advantages-header {
   width: 660px;
   margin: 0 auto;
+  padding: 69px 0 90px 0;
+}
+
+.advantages-header-title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.advantages-header-text {
+  margin: 0;
 }
 
 .advantages-list {
@@ -379,6 +410,7 @@ img {
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
 
 .advantages-item-image {
@@ -388,19 +420,85 @@ img {
 
 .advantages-item {
   width: 400px;
+  min-height: 384px;
+  box-sizing: border-box;
+  padding: 92px 85px 0 85px;
+}
+
+.advantages-item-location {
+  padding-top: 103px;
+}
+
+.advantages-item-convenience {
+  padding-top: 182px;
+}
+
+.advantages-title {
+  margin: 0;
+  padding: 0 25px;
+}
+
+.decorative-line {
+  margin: 30px 84px;
+}
+
+.advantages-text {
+  margin: 0;
+  margin-top: 30px;
+
 }
 
 .query {
   width: 600px;
   margin: 0 auto;
+  padding: 96px 304px;
+}
+
+.query-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.query-text {
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .query-button-link {
   margin: 0 auto;
+  padding: 12px 50px;
+}
+
+.subscription {
+  min-height: 415px;
+  margin: 0;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+
+.subscription-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscription-text {
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscription-form {
+  margin: 0;
   text-align: center;
+}
+
+.subscription-email {
+  /* font: inherit; */
+  width: 452px;
+  height: 52px;
+}
+
+.subscription-submit {
+  padding: 8px 50px;
 }
 
 /* Каталог */
@@ -512,4 +610,18 @@ img {
 .footer-logo {
   width: 115px;
   margin: 0;
+}
+
+/* Декоративные элементы */
+
+.decorative-line {
+  opacity: 0.3;
+}
+
+.advantages-item .decorative-line {
+  color: #000000;
+}
+
+.advantages-item-image .decorative-line {
+  color: #ffffff;
 }

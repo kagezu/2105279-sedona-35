@@ -57,8 +57,7 @@ img {
   object-fit: contain;
 }
 
-.main,
-.main-inner {
+.main {
   /* Липкий футер */
   flex-grow: 1;
 }
@@ -75,7 +74,7 @@ img {
 
 /* Шрифты */
 
-.main,
+.main-first,
 .subscription {
   text-align: center;
 }
@@ -253,7 +252,6 @@ img {
 
 .header,
 .main,
-.main-inner,
 .footer {
   background-color: #ffffff;
 }
@@ -532,10 +530,6 @@ img {
 }
 
 /* Каталог */
-
-.main-inner {
-  margin-top: -10px;
-}
 
 .filter-wrapper {
   min-height: 412px;

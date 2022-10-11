@@ -90,12 +90,10 @@ img {
 .navigation-button-link,
 .filter-button-submit,
 .filter-button-reset,
-.catalog-card-rate,
-.catalog-card-button-details,
-.catalog-card-button-favorites,
-.catalog-card-button-favorite {
+.card-button {
   font-size: 16px;
   line-height: 20px;
+  text-decoration-line: none;
 }
 
 .navigation-link,
@@ -122,6 +120,10 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.catalog-card-link {
+  text-decoration-line: none;
 }
 
 .advantages-header-text,
@@ -201,7 +203,8 @@ img {
 
 /* Цвет и фон текста */
 
-.navigation a {
+.navigation a,
+.catalog-card-link {
   color: #000000;
 }
 
@@ -217,7 +220,6 @@ img {
   color: #ffffff;
   background-color: #756157;
 }
-
 
 .subscription-submit,
 .filter-button-submit,
@@ -348,10 +350,6 @@ img {
 
 /* Хедер */
 
-.navigation-logo-link {
-  z-index: 1;
-}
-
 .navigation {
   width: 1060px;
   display: flex;
@@ -362,6 +360,8 @@ img {
   width: 140px;
   margin: 0;
   margin-right: 30px;
+  margin-bottom: -10px;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -404,10 +404,6 @@ img {
 }
 
 /* Главная страница */
-
-.main {
-  margin-top: -10px;
-}
 
 .hero {
   padding: 51px 0 82px 0;
@@ -522,7 +518,7 @@ img {
 
 .subscription-email {
   width: 452px;
-  height: 52px;
+  padding: 14px 20px;
 }
 
 .subscription-submit {
@@ -591,8 +587,8 @@ img {
 .filter-costs input {
   font: inherit;
   width: 143px;
-  height: 48px;
   box-sizing: border-box;
+  padding: 12px 20px;
 }
 
 .filter-group-select {
@@ -642,6 +638,7 @@ img {
   box-sizing: border-box;
   margin: 0;
   margin-right: 62px;
+  padding: 0 20px;
 }
 
 .catalog-header a {
@@ -659,26 +656,31 @@ img {
   margin: 0 auto;
   margin-bottom: 39px;
   border-bottom: 1px solid #E6E6E6;
+  padding-top: 1px;
   padding-bottom: 40px;
 }
 
 .catalog-card-item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
   margin: 0;
   padding: 20px;
   outline: 1px solid #E6E6E6;
 }
 
+.catalog-card-link {
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-card-title {
-  margin: 14px 0 15px 0;
+  margin: 0;
+  margin-top: 12px;
 }
 
-.catalog-card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 16px 20px;
-}
-
-.catalog-card-grid p {
+.catalog-card-item p {
   width: 140px;
   height: 21px;
   margin: 0

@@ -288,6 +288,13 @@ img {
   background-color: #82B3D3;
 }
 
+.breadcrumbs-link-home {
+  background-image: url("../images/icon/breadcrumbs-home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration-line: none;
+}
+
 .filter-button-reset {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
@@ -363,7 +370,6 @@ img {
   width: 1060px;
   display: flex;
   margin: 0 auto;
-  /* align-items: center; */
 }
 
 .navigation-logo-link {
@@ -449,6 +455,7 @@ img {
 
 .advantages-item-image {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
 }
 
@@ -556,10 +563,21 @@ img {
   list-style-type: none;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link-home {
   display: block;
-  min-width: 12px;
-  min-height: 12px;
+  width: 12px;
+  height: 20px;
+}
+
+.breadcrumbs-item {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: ">";
+  margin: 0;
+  margin-right: 10px;
 }
 
 .filter-form {

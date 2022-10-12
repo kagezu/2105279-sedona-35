@@ -346,7 +346,7 @@ img {
 }
 
 .view-cards {
-  background-image: url("../images/icon/card.svg");
+  background-image: url("../images/icon/cards.svg");
   background-repeat: no-repeat;
 }
 
@@ -566,8 +566,6 @@ img {
   list-style-type: none;
 }
 
-.breadcrumbs-link {}
-
 .breadcrumbs-link-home {
   display: block;
   width: 12px;
@@ -672,7 +670,7 @@ img {
   box-sizing: border-box;
   margin: 0;
   margin-right: 62px;
-  padding: 0 20px;
+  padding: 0 14px;
 }
 
 .catalog-header a {

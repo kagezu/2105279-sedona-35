@@ -226,6 +226,18 @@ img {
   background-color: #756157;
 }
 
+.navigation-user-search {
+  background-image: url("../images/icon/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-user-like {
+  background-image: url("../images/icon/likes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .hero {
   background-color: #4382a1;
   background-image: url("../images/hero-layer.svg"), url("../images/hero.jpg");
@@ -351,12 +363,13 @@ img {
   width: 1060px;
   display: flex;
   margin: 0 auto;
+  /* align-items: center; */
 }
 
 .navigation-logo-link {
   width: 140px;
   margin: 0;
-  margin-right: 30px;
+  margin-right: 28px;
   margin-bottom: -10px;
   z-index: 1;
 }
@@ -364,7 +377,7 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 340px;
+  align-items: center;
   max-width: 500px;
   margin: 0;
   padding: 0;
@@ -373,7 +386,6 @@ img {
 }
 
 .navigation-link {
-  display: block;
   margin: 0;
   padding: 20px 16px;
 }
@@ -389,8 +401,8 @@ img {
 .navigation-user-link {
   display: block;
   margin: 0;
-  min-width: 44px;
-  min-height: 64px;
+  width: 44px;
+  height: 64px;
 }
 
 .navigation-button-link {

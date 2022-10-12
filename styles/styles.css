@@ -4,8 +4,7 @@
 Подключение шрифтов
 Глобальные селекторы
 Шрифты
-Цвет и фон текста
-Фоны и фоновые изображения
+Цвета и изображения
 Сетки
   Хедер
   Главная страница
@@ -14,7 +13,7 @@
 Декоративные элементы
 */
 
-/* Подключение шрифтов */
+/* Подключение шрифтов *************************************************************/
 
 @font-face {
   font-family: "PT Sans";
@@ -32,7 +31,7 @@
   font-display: swap;
 }
 
-/* Глобальные селекторы */
+/* Глобальные селекторы *************************************************************/
 
 html {
   height: 100%;
@@ -72,7 +71,7 @@ img {
   visibility: hidden;
 }
 
-/* Шрифты */
+/* Шрифты *************************************************************/
 
 .main-first,
 .subscription {
@@ -201,7 +200,13 @@ img {
   text-transform: uppercase;
 }
 
-/* Цвет и фон текста */
+/* Цвета и изображения *************************************************************/
+
+.header,
+.main,
+.footer {
+  background-color: #ffffff;
+}
 
 .navigation a,
 .catalog-card-link {
@@ -219,43 +224,6 @@ img {
 .catalog-card-button-details {
   color: #ffffff;
   background-color: #756157;
-}
-
-.subscription-submit,
-.filter-button-submit,
-.catalog-card-button-favorite,
-.pagination a,
-.advantages-item-image {
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
-.filter-button-reset {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.catalog-select {
-  color: #333333;
-  background-color: #ffffff;
-}
-
-.catalog-card-rate {
-  color: #333333;
-  background-color: #F2F2F2;
-}
-
-.pagination .pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-}
-
-/* Фоны и фоновые изображения */
-
-.header,
-.main,
-.footer {
-  background-color: #ffffff;
 }
 
 .hero {
@@ -299,6 +267,35 @@ img {
   background-repeat: no-repeat;
 }
 
+.subscription-submit,
+.filter-button-submit,
+.catalog-card-button-favorite,
+.pagination a,
+.advantages-item-image {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.filter-button-reset {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.catalog-select {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.catalog-card-rate {
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination .pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
 .social-vk {
   background-image: url("../images/icon/vk.svg");
   background-repeat: no-repeat;
@@ -312,6 +309,11 @@ img {
 .social-youtube {
   background-image: url("../images/icon/youtube.svg");
   background-repeat: no-repeat;
+}
+
+.footer-social a,
+.catalog-header a {
+  background-position: center;
 }
 
 .filter-wrapper {
@@ -336,19 +338,14 @@ img {
   background-repeat: no-repeat;
 }
 
-.footer-social a,
-.catalog-header a {
-  background-position: center;
-}
-
-/* Сетки */
+/* Сетки *************************************************************/
 
 .wrapper {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* Хедер */
+/* Хедер ****************************************/
 
 .navigation {
   width: 1060px;
@@ -403,7 +400,7 @@ img {
   padding: 8px 34px;
 }
 
-/* Главная страница */
+/* Главная страница ****************************************/
 
 .hero {
   padding: 51px 0 82px 0;
@@ -525,7 +522,7 @@ img {
   padding: 8px 50px;
 }
 
-/* Каталог */
+/* Каталог ****************************************/
 
 .filter-wrapper {
   min-height: 412px;
@@ -721,7 +718,7 @@ img {
   padding-top: 16px;
 }
 
-/* Футер */
+/* Футер ****************************************/
 
 .footer-wrapper {
   display: flex;
@@ -765,7 +762,7 @@ img {
 
 }
 
-/* Декоративные элементы */
+/* Декоративные элементы *************************************************************/
 
 .decorative-line {
   opacity: 0.3;

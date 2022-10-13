@@ -8,7 +8,9 @@
 Сетки
   Хедер
   Главная страница
-  Каталог
+  Страница с Каталогом
+    Форма фильтра
+    Список карточек
   Футер
 Декоративные элементы
 */
@@ -544,7 +546,7 @@ img {
   padding: 8px 50px;
 }
 
-/* Каталог ****************************************/
+/* Страница с Каталогом ****************************************/
 
 .filter-wrapper {
   min-height: 412px;
@@ -582,6 +584,8 @@ img {
   margin: 0;
   margin-right: 10px;
 }
+
+/* Форма фильтра *********************/
 
 .filter-form {
   display: flex;
@@ -680,9 +684,11 @@ img {
   margin-left: 8px;
 }
 
+/* Список карточек *********************/
+
 .catalog-card-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 1060px;
   margin: 0 auto;
@@ -695,6 +701,7 @@ img {
 .catalog-card-item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr repeat(3, auto);
   gap: 16px 20px;
   margin: 0;
   padding: 20px;
@@ -707,9 +714,13 @@ img {
   padding: 0;
 }
 
+.catalog-card-image {
+  display: block;
+}
+
 .catalog-card-title {
   margin: 0;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .catalog-card-item p {

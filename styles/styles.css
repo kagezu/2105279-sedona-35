@@ -164,9 +164,9 @@ img {
 }
 
 .footer-contact-tell {
-  text-align: center;
   font-size: 40px;
   line-height: 40px;
+  text-decoration-line: none;
 }
 
 .filter-costs input {
@@ -254,6 +254,10 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item {
+  background-position: center 80px;
+}
+
 .advantages-icon-housing {
   background-image: url("../images/icon/home.svg");
   background-repeat: no-repeat;
@@ -267,11 +271,9 @@ img {
 .advantages-icon-souvenirs {
   background-image: url("../images/icon/present.svg");
   background-repeat: no-repeat;
+  background-position: center 78px;
 }
 
-.advantages-item {
-  background-position: center 80px;
-}
 
 .subscription-background {
   color: #ffffff;
@@ -327,12 +329,12 @@ img {
   background-color: #F2F2F2;
 }
 
-.social-vk {
+/* .social-vk {
   background-image: url("../images/icon/vk.svg");
   background-repeat: no-repeat;
-}
+} */
 
-.social-telegram {
+/* .social-telegram {
   background-image: url("../images/icon/telegram.svg");
   background-repeat: no-repeat;
 }
@@ -340,12 +342,8 @@ img {
 .social-youtube {
   background-image: url("../images/icon/youtube.svg");
   background-repeat: no-repeat;
-}
+} */
 
-.footer-social a,
-.catalog-header a {
-  background-position: center;
-}
 
 .view-cards {
   background-image: url("../images/icon/cards.svg");
@@ -411,9 +409,9 @@ img {
 
 .navigation-user-link {
   display: block;
-  margin: 0;
   width: 44px;
-  height: 64px;
+  margin: 0;
+  padding: 32px 0;
 }
 
 .navigation-button-link {
@@ -772,50 +770,49 @@ img {
 
 /* Футер **************************************************/
 
-.footer-wrapper {
+.footer {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  margin: 0 auto;
-  padding: 46px 70px 24px 70px;
-  align-items: flex-end;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-social {
   display: flex;
-  width: 142px;
-  margin: 0;
+  justify-content: space-between;
+  width: 141px;
+  align-self: center;
 }
 
-.button-social {
-  width: 47px;
-  height: 40px;
-  margin: 0;
+.footer-social-link {
+  position: relative;
+  padding: 20px 23px;
+  align-self: center;
 }
 
-.footer-contact {
-  width: 720px;
-  margin: 0;
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .footer-contact-tell {
-  margin: 0;
-}
-
-.footer-logo {
-  min-width: 115px;
-  margin: 0;
+  align-self: center;
+  margin: 5px 0;
 }
 
 .footer-logo-link {
-  display: block;
-  min-width: 115px;
-  min-height: 36px;
+  align-self: center;
+}
 
+.footer-logo-icon {
+  display: block;
 }
 
 /* Декоративные элементы **********************************/
-
 
 .decorative-line {
   opacity: 0.3;

@@ -88,6 +88,10 @@ img {
   text-decoration-line: none;
   text-transform: uppercase;
   text-align: center;
+  border-width: none;
+  border-radius: 4px;
+  cursor: pointer;
+
 }
 
 .navigation-button-link,
@@ -188,18 +192,12 @@ img {
   text-decoration-line: none;
 }
 
-.catalog-card-button-details,
-.catalog-card-button-favorites,
-.catalog-card-button-favorite {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .catalog-select {
   font: inherit;
 }
 
 .catalog-card-rate {
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -517,7 +515,7 @@ img {
   padding: 12px 50px;
 }
 
-/* Форма подписки *******************************/
+/* Форма подписки *****************************************/
 
 .subscription {
   min-height: 415px;
@@ -817,6 +815,7 @@ img {
 }
 
 /* Декоративные элементы **********************************/
+
 
 .decorative-line {
   opacity: 0.3;

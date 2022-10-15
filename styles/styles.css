@@ -291,12 +291,12 @@ img {
   background-color: #82B3D3;
 }
 
-.breadcrumbs-link-home {
+/* .breadcrumbs-link-home {
   background-image: url("../images/icon/breadcrumbs-home.png");
   background-repeat: no-repeat;
   background-position: center;
   text-decoration-line: none;
-}
+} */
 
 .breadcrumbs-link {
   color: #ffffff;
@@ -564,6 +564,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -572,20 +573,21 @@ img {
 
 .breadcrumbs-link-home {
   display: block;
-  width: 12px;
+  width: 13px;
   height: 20px;
-}
-
-.breadcrumbs-item {
-  margin: 0;
   margin-right: 10px;
 }
 
-.breadcrumbs-item:not(:first-child)::before {
-  content: ">";
-  margin: 0;
+.breadcrumbs-separator {
   margin-right: 10px;
 }
+
+/* .breadcrumbs-link:not(:first-child)::before {
+  content: url("../images/icon/arrow.svg");
+  margin: 0;
+  margin-right: 10px;
+  color: #ffffff;
+} */
 
 /* Форма фильтра ******************************************/
 

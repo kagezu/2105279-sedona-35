@@ -578,16 +578,11 @@ img {
   margin-right: 10px;
 }
 
-.breadcrumbs-separator {
-  margin-right: 10px;
-}
-
-/* .breadcrumbs-link:not(:first-child)::before {
+.breadcrumbs-link:not(:first-child)::before {
   content: url("../images/icon/arrow.svg");
   margin: 0;
   margin-right: 10px;
-  color: #ffffff;
-} */
+}
 
 /* Форма фильтра ******************************************/
 

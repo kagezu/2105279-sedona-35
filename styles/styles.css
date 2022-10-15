@@ -8,6 +8,7 @@
 Сетки
   Хедер
   Главная страница
+    Список преимуществ
     Форма подписки
   Страница с Каталогом
     Форма фильтра
@@ -102,6 +103,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: none;
+  text-transform: uppercase;
 }
 
 .navigation-link,
@@ -197,11 +199,6 @@ img {
   font: inherit;
 }
 
-.catalog-card-rate {
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 /* Цвета и изображения ************************************/
 
 .header,
@@ -280,6 +277,7 @@ img {
   background-color: #4382a1;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscription-submit,
@@ -331,10 +329,13 @@ img {
 
 /* Хедер **************************************************/
 
+.header {
+  box-sizing: border-box;
+  padding: 0 70px;
+}
+
 .navigation {
-  width: 1060px;
   display: flex;
-  margin: 0 auto;
 }
 
 .navigation-logo-link {
@@ -363,7 +364,6 @@ img {
 
 .navigation-user {
   display: flex;
-  min-width: 268px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -372,7 +372,6 @@ img {
 .navigation-user-link {
   display: block;
   width: 44px;
-  margin: 0;
   padding: 32px 0;
 }
 
@@ -386,7 +385,7 @@ img {
 /* Главная страница ***************************************/
 
 .hero {
-  padding: 51px 0 82px 0;
+  padding: 51px 0 82px;
 }
 
 .hero-image {
@@ -395,9 +394,8 @@ img {
 }
 
 .advantages-header {
-  width: 660px;
   margin: 0 auto;
-  padding: 69px 0 90px 0;
+  padding: 69px 270px 90px;
 }
 
 .advantages-header-title {
@@ -409,26 +407,24 @@ img {
   margin: 0;
 }
 
+/* Список преимуществ *************************************/
+
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   margin: 0;
   padding: 0;
-  text-align: center;
   list-style-type: none;
+}
+
+.advantages-item {
+  padding: 92px 85px 50px;
 }
 
 .advantages-item-image {
   display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-}
-
-.advantages-item {
-  width: 400px;
-  min-height: 384px;
-  box-sizing: border-box;
-  padding: 92px 85px 0 85px;
+  grid-column: 1/-1;
 }
 
 .advantages-item-location {
@@ -444,20 +440,13 @@ img {
   padding: 0 29px;
 }
 
-.decorative-line {
-  margin: 30px 84px;
-}
-
 .advantages-text {
   margin: 0;
   margin-top: 30px;
 }
 
 .query {
-  width: 600px;
-  margin: 0 auto;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 300px 104px;
 }
 
 .query-title {
@@ -478,10 +467,7 @@ img {
 /* Форма подписки *****************************************/
 
 .subscription {
-  min-height: 415px;
-  margin: 0;
-  padding-top: 96px;
-  box-sizing: border-box;
+  padding: 96px 0 101px;
 }
 
 .subscription-title {
@@ -502,7 +488,6 @@ img {
 
 .subscription-email {
   width: 452px;
-  margin: 0;
   padding: 14px 20px;
 }
 
@@ -621,9 +606,7 @@ img {
 
 .catalog-header {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  padding: 50px 70px 40px 70px;
+  padding: 50px 70px 40px;
 }
 
 .catalog-count {
@@ -635,13 +618,11 @@ img {
 .catalog-select {
   width: 292px;
   box-sizing: border-box;
-  margin: 0;
   margin-right: 62px;
   padding: 0 14px;
 }
 
 .button-toggle {
-  margin: 0;
   margin-left: 8px;
   padding: 17px 16px;
 }
@@ -656,12 +637,9 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 1060px;
-  margin: 0 auto;
+  padding: 1px 70px 40px;
   margin-bottom: 39px;
   border-bottom: 1px solid #E6E6E6;
-  padding-top: 1px;
-  padding-bottom: 40px;
 }
 
 .catalog-card-item {
@@ -669,15 +647,12 @@ img {
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 1fr repeat(3, auto);
   gap: 16px 20px;
-  margin: 0;
-  padding: 20px;
+  padding: 20px 20px 21px;
   outline: 1px solid #E6E6E6;
 }
 
 .catalog-card-link {
   grid-column: 1/-1;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-card-image {
@@ -686,13 +661,11 @@ img {
 
 .catalog-card-title {
   margin: 0;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .catalog-card-item p {
-  width: 140px;
-  height: 21px;
-  margin: 0
+  margin: 0;
 }
 
 .catalog-card-cost {
@@ -700,12 +673,7 @@ img {
 }
 
 .card-button {
-  padding: 8px 0 8px 0;
-  text-align: center;
-}
-
-.catalog-card-rate {
-  padding: 8px 0 8px 0;
+  padding: 8px 0 8px;
   text-align: center;
 }
 
@@ -714,7 +682,7 @@ img {
 .pagination {
   display: flex;
   width: 1060px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 60px;
   text-align: center;
 }
 
@@ -737,8 +705,8 @@ img {
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
-  padding: 40px 70px 30px 70px;
+  box-sizing: border-box;
+  padding: 40px 70px 30px;
 }
 
 .footer-social {
@@ -777,6 +745,10 @@ img {
 }
 
 /* Декоративные элементы **********************************/
+
+.decorative-line {
+  margin: 30px 84px;
+}
 
 .decorative-line {
   opacity: 0.3;

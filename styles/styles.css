@@ -521,12 +521,11 @@ img {
 
 .inner-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .breadcrumbs {
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -540,10 +539,11 @@ img {
   margin-right: 10px;
 }
 
-.breadcrumbs-link:not(:first-child)::before {
+.breadcrumbs-item:not(:first-child)::before {
   content: url("../images/icon/arrow.svg");
+  width: 7px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* Форма фильтра ******************************************/

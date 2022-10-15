@@ -11,6 +11,7 @@
     Форма подписки
   Страница с Каталогом
     Форма фильтра
+    Шапка каталога
     Список карточек
     Пагинация
   Футер
@@ -344,7 +345,7 @@ img {
   background-repeat: no-repeat;
 } */
 
-
+/*
 .view-cards {
   background-image: url("../images/icon/cards.svg");
   background-repeat: no-repeat;
@@ -358,7 +359,7 @@ img {
 .view-card-list {
   background-image: url("../images/icon/card-list.svg");
   background-repeat: no-repeat;
-}
+} */
 
 /* Сетки **************************************************/
 
@@ -655,6 +656,8 @@ img {
   border: none;
 }
 
+/* Шапка каталога *****************************************/
+
 .catalog-header {
   display: flex;
   width: 1060px;
@@ -676,11 +679,14 @@ img {
   padding: 0 14px;
 }
 
-.catalog-header a {
-  width: 48px;
-  height: 48px;
+.button-toggle {
   margin: 0;
   margin-left: 8px;
+  padding: 17px 16px;
+}
+
+.button-toggle-icon {
+  display: block;
 }
 
 /* Список карточек ****************************************/

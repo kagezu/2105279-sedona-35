@@ -275,7 +275,6 @@ img {
   background-position: center 78px;
 }
 
-
 .subscription-background {
   color: #ffffff;
   background-color: #4382a1;
@@ -291,13 +290,6 @@ img {
   color: #ffffff;
   background-color: #82B3D3;
 }
-
-/* .breadcrumbs-link-home {
-  background-image: url("../images/icon/breadcrumbs-home.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  text-decoration-line: none;
-} */
 
 .breadcrumbs-link {
   color: #ffffff;
@@ -329,37 +321,6 @@ img {
   color: #000000;
   background-color: #F2F2F2;
 }
-
-/* .social-vk {
-  background-image: url("../images/icon/vk.svg");
-  background-repeat: no-repeat;
-} */
-
-/* .social-telegram {
-  background-image: url("../images/icon/telegram.svg");
-  background-repeat: no-repeat;
-}
-
-.social-youtube {
-  background-image: url("../images/icon/youtube.svg");
-  background-repeat: no-repeat;
-} */
-
-/*
-.view-cards {
-  background-image: url("../images/icon/cards.svg");
-  background-repeat: no-repeat;
-}
-
-.view-card {
-  background-image: url("../images/icon/card.svg");
-  background-repeat: no-repeat;
-}
-
-.view-card-list {
-  background-image: url("../images/icon/card-list.svg");
-  background-repeat: no-repeat;
-} */
 
 /* Сетки **************************************************/
 

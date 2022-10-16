@@ -292,10 +292,6 @@ img {
   background-color: #82B3D3;
 }
 
-.breadcrumbs-link {
-  color: #ffffff;
-}
-
 .filter-wrapper {
   color: #ffffff;
   background-color: #4382a1;
@@ -806,6 +802,24 @@ img {
 .footer-logo-link:active,
 .footer-contact-tell:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+/* Хлебные крошки *****************************************/
+
+.breadcrumbs-link {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Кнопки вида ********************************************/

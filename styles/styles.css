@@ -17,6 +17,7 @@
     Пагинация
   Футер
 Декоративные элементы
+Интерактивные элементы
 */
 
 /* Подключение шрифтов ************************************/
@@ -767,4 +768,36 @@ img {
 
 .catalog-card-list {
   border-bottom: 1px solid #E6E6E6;
+}
+
+/* Интерактивные элементы **********************************/
+
+.footer-social-link {
+  color: #83B3D3;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: #68A2CA;
+}
+
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+.footer-logo-link,
+.footer-contact-tell {
+  color: #000000;
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus,
+.footer-contact-tell:hover,
+.footer-contact-tell:focus {
+  color: #756157;
+}
+
+.footer-logo-link:active,
+.footer-contact-tell:active {
+  color: rgba(117, 97, 87, 0.3);
 }

@@ -733,6 +733,18 @@ img {
 
 /* Декоративные элементы **********************************/
 
+.navigation-user-like {
+  position: relative;
+}
+
+.count-likes {
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  top: 11px;
+  right: 4px;
+}
+
 .navigation-link-current {
   position: relative;
   border-bottom: 2px solid #756257;

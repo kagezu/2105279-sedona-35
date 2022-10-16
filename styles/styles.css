@@ -98,6 +98,7 @@ img {
   border-width: none;
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 
 }
 
@@ -774,7 +775,6 @@ img {
   background-color: #615048;
 }
 
-
 .button-brown:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
@@ -810,6 +810,12 @@ img {
   background-color: #7DB54F;
 }
 
+.button-brown:disabled,
+.button-blue:disabled,
+.button-green:disabled {
+  background-color: #E5E5E5;
+}
+
 /* Футер **************************************************/
 
 .footer-social-link {
@@ -842,19 +848,21 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-navigation-button-link
 /* Форма **************************************************/
 
+.filter-label,
 .filter-button-reset,
 .breadcrumbs-link {
   color: #ffffff;
 }
 
+.filter-label:hover,
 .filter-button-reset:hover,
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.filter-label:focus,
 .filter-button-reset:focus,
 .breadcrumbs-link:focus {
   color: #ffffff;
@@ -864,9 +872,14 @@ navigation-button-link
   border: 3px solid #83B3D3;
 }
 
+.filter-label:active,
 .filter-button-reset:active,
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button-reset:disabled {
+  opacity: 0.1;
 }
 
 /* Кнопки вида ********************************************/
@@ -891,22 +904,6 @@ navigation-button-link
 }
 
 /* Пагинация **********************************************/
-
-.pagination-link {
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
-.pagination-link:hover,
-.pagination-link:focus {
-  color: #ffffff;
-  background-color: #68A2CA;
-}
-
-.pagination-link:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #82B3D3;
-}
 
 .pagination-current,
 .pagination-current:hover,

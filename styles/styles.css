@@ -19,6 +19,7 @@
 Декоративные элементы
 Интерактивные элементы
   Футер
+  Форма
   Кнопки вида
   Пагинация
 */
@@ -211,22 +212,15 @@ img {
   background-color: #ffffff;
 }
 
-.navigation a,
+.navigation-link,
 .catalog-card-link {
   color: #000000;
 }
 
-.navigation .count-likes,
+.count-likes,
 .catalog-card-button-favorites {
   color: #ffffff;
   background-color: #7DB54F;
-}
-
-.navigation .navigation-button-link,
-.query-button-link,
-.catalog-card-button-details {
-  color: #ffffff;
-  background-color: #756157;
 }
 
 .navigation-user-search {
@@ -585,15 +579,11 @@ img {
   text-align: center;
 }
 
+.filter-button-reset,
 .filter-button-submit {
   margin: 0;
   margin-bottom: 38px;
   padding: 8px 50px;
-  border: none;
-}
-
-.filter-button-reset {
-  margin: 0;
   border: none;
 }
 
@@ -772,6 +762,54 @@ img {
 
 /* Интерактивные элементы *********************************/
 
+/* Кнопки *************************************************/
+
+.button-brown {
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #615048;
+}
+
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button-blue {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-green {
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #6C9E42;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+}
+
 /* Футер **************************************************/
 
 .footer-social-link {
@@ -804,20 +842,29 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-/* Хлебные крошки *****************************************/
+navigation-button-link
+/* Форма **************************************************/
 
+.filter-button-reset,
 .breadcrumbs-link {
   color: #ffffff;
 }
 
+.filter-button-reset:hover,
 .breadcrumbs-link:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.filter-button-reset:focus,
 .breadcrumbs-link:focus {
   color: #ffffff;
 }
 
+.filter-button-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.filter-button-reset:active,
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }

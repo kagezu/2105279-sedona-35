@@ -284,7 +284,6 @@ img {
 .subscription-submit,
 .filter-button-submit,
 .catalog-card-button-favorite,
-.pagination a,
 .advantages-item-image {
   color: #ffffff;
   background-color: #82B3D3;
@@ -313,11 +312,6 @@ img {
 
 .catalog-card-rate {
   color: #333333;
-  background-color: #F2F2F2;
-}
-
-.pagination .pagination-current {
-  color: #000000;
   background-color: #F2F2F2;
 }
 
@@ -819,4 +813,28 @@ img {
 .button-toggle-current,
 .button-toggle:active {
   border: 2px solid #000000;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  color: #ffffff;
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
 }

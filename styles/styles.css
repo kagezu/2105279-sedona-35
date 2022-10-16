@@ -625,7 +625,7 @@ img {
 
 .button-toggle {
   margin-left: 8px;
-  padding: 17px 16px;
+  padding: 15px 14px;
 }
 
 .button-toggle-icon {
@@ -800,4 +800,23 @@ img {
 .footer-logo-link:active,
 .footer-contact-tell:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.button-toggle {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  color: #000000;
+}
+
+.button-toggle:hover {
+  border: 2px solid #000000;
+}
+
+.button-toggle:focus {
+  border: 2px solid #68A2CA;
+}
+
+.button-toggle-current,
+.button-toggle:active {
+  border: 2px solid #000000;
 }

@@ -18,6 +18,9 @@
   Футер
 Декоративные элементы
 Интерактивные элементы
+  Футер
+  Кнопки вида
+  Пагинация
 */
 
 /* Подключение шрифтов ************************************/
@@ -331,6 +334,7 @@ img {
 
 .navigation {
   display: flex;
+  margin-bottom: -1px;
 }
 
 .navigation-logo-link {
@@ -344,7 +348,6 @@ img {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 500px;
   margin: 0;
   padding: 0;
@@ -353,8 +356,9 @@ img {
 }
 
 .navigation-link {
-  margin: 0;
-  padding: 20px 16px;
+  display: block;
+  margin: 0 16px;
+  padding: 19px 0 20px;
 }
 
 .navigation-user {
@@ -742,6 +746,12 @@ img {
 
 /* Декоративные элементы **********************************/
 
+.navigation-link-current {
+  position: relative;
+  border-bottom: 2px solid #756257;
+  z-index: 1;
+}
+
 .decorative-line::after {
   content: "";
   display: block;
@@ -764,7 +774,9 @@ img {
   border-bottom: 1px solid #E6E6E6;
 }
 
-/* Интерактивные элементы **********************************/
+/* Интерактивные элементы *********************************/
+
+/* Футер **************************************************/
 
 .footer-social-link {
   color: #83B3D3;
@@ -796,6 +808,8 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
+/* Кнопки вида ********************************************/
+
 .button-toggle {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -814,6 +828,8 @@ img {
 .button-toggle:active {
   border: 2px solid #000000;
 }
+
+/* Пагинация **********************************************/
 
 .pagination-link {
   color: #ffffff;

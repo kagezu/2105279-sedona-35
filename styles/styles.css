@@ -313,6 +313,17 @@ button-toggle,
   background-color: #F2F2F2;
 }
 
+.catalog-card-stars {
+  background-image: url("../images/icon/star.svg");
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
 /* Сетки **************************************************/
 
 .wrapper {
@@ -668,6 +679,18 @@ button-toggle,
   text-align: center;
 }
 
+.two-stars {
+  width: 48px;
+}
+
+.three-stars {
+  width: 72px;
+}
+
+.four-star {
+  width: 96px;
+}
+
 /* Пагинация **********************************************/
 
 .pagination {
@@ -917,14 +940,4 @@ button-toggle,
 .button-toggle-current,
 .button-toggle:active {
   border: 2px solid #000000;
-}
-
-/* Пагинация **********************************************/
-
-.pagination-current,
-.pagination-current:hover,
-.pagination-current:focus,
-.pagination-current:active {
-  color: #000000;
-  background-color: #F2F2F2;
 }

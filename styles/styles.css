@@ -5,17 +5,18 @@
 Глобальные селекторы
 Шрифты
 Цвета и изображения
-Сетки
-  Хедер
-  Главная страница
-    Список преимуществ
-    Форма подписки
-  Страница с Каталогом
-    Форма фильтра
-    Шапка каталога
-    Список карточек
-    Пагинация
-  Футер
+
+Хедер
+Главная страница
+  Список преимуществ
+  Форма подписки
+Страница с Каталогом
+  Форма фильтра
+  Шапка каталога
+  Список карточек
+  Пагинация
+Футер
+
 Декоративные элементы
 Интерактивные элементы
   Футер
@@ -46,10 +47,13 @@
 
 html {
   height: 100%;
+  color: #000000;
+  background: #F2F2F2;
 }
 
 body {
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -58,8 +62,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
-  background: #F2F2F2;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 img {
@@ -84,7 +88,7 @@ img {
 
 /* Шрифты *************************************************/
 
-.main-first,
+.align,
 .subscription {
   text-align: center;
 }
@@ -211,12 +215,6 @@ button-toggle,
 
 /* Цвета и изображения ************************************/
 
-.header,
-.main,
-.footer {
-  background-color: #ffffff;
-}
-
 .navigation-link,
 .catalog-card-link {
   color: #000000;
@@ -322,13 +320,6 @@ button-toggle,
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
-}
-
-/* Сетки **************************************************/
-
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 /* Хедер **************************************************/

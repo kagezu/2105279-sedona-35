@@ -776,7 +776,6 @@ button-toggle,
   height: 2px;
   margin: 30px auto 29px;
   opacity: 0.3;
-  z-index: 1;
 }
 
 .advantages-item .decorative-line::after {
@@ -884,6 +883,7 @@ button-toggle,
 .filter-button-reset,
 .breadcrumbs-link {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .filter-label:hover,

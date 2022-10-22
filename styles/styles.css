@@ -408,7 +408,7 @@ button-toggle,
 .advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(384px, auto));
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -547,12 +547,13 @@ button-toggle,
 
 .filter-legend {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  padding-left: 0;
 }
 
-.filter-item {
+.filter-item:not(:last-child) {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .filter-costs {
@@ -580,7 +581,7 @@ button-toggle,
 .filter-group-button {
   width: 191px;
   margin: 0;
-  margin-left: 70px;
+  margin-left: 68px;
   padding: 0;
   padding-top: 55px;
   text-align: center;
@@ -879,6 +880,53 @@ button-toggle,
 
 /* Форма **************************************************/
 
+.filter-label {
+  position: relative;
+}
+
+.filter-label-checkbox,
+.filter-label-radio {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.filter-label-checkbox {
+  border-radius: 4px;
+}
+
+.filter-label-radio {
+  border-radius: 50%;
+}
+
+.filter-label-text {
+  padding-left: 36px;
+}
+
+.filter-checkbox:checked + .filter-label::before {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  content: url("../images/icon/checkbox-on.svg");
+  z-index: 1;
+}
+
+.filter-radio:checked + .filter-label::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 7px;
+  left: 5px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+  z-index: 1;
+}
+
 .filter-label,
 .filter-button-reset,
 .breadcrumbs-link {
@@ -889,7 +937,7 @@ button-toggle,
 .filter-label:hover,
 .filter-button-reset:hover,
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .filter-label:focus,
@@ -905,7 +953,7 @@ button-toggle,
 .filter-label:active,
 .filter-button-reset:active,
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .filter-button-reset:disabled {

@@ -289,6 +289,10 @@ button-toggle,
   background-color: #82B3D3;
 }
 
+.subscription-email {
+  background-color: #F2F2F2;
+}
+
 .filter-wrapper {
   color: #ffffff;
   background-color: #4382a1;

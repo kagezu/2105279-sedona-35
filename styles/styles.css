@@ -566,11 +566,6 @@ button-toggle,
   margin-bottom: 17px;
 }
 
-.filter-costs {
-  display: flex;
-  margin: 0;
-}
-
 .filter-group-select {
   min-width: 150px;
   margin-right: 70px;
@@ -580,6 +575,12 @@ button-toggle,
   min-width: 228px;
   margin: 0;
   margin-left: auto;
+}
+
+.filter-costs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .filter-costs input {
@@ -987,6 +988,49 @@ button-toggle,
 
 .filter-button-reset:disabled {
   opacity: 0.1;
+}
+
+/* Ползунок ***********************************************/
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 /* Кнопки вида ********************************************/

@@ -92,21 +92,21 @@
             <fieldset class="filter-group filter-group-select">
               <legend class="filter-legend">Тип жилья:</legend>
               <ul class="filter-list">
-                <li class="filter-item">
+                <li class="filter-select-item">
                   <input class="filter-radio visually-hidden" type="radio" name="housing" value="hotel" id="hotel" checked>
                   <label class="filter-label" for="hotel">
                     <span class="filter-label-radio"></span>
                     <span class="filter-label-text">Гостиница</span>
                   </label>
                 </li>
-                <li class="filter-item">
+                <li class="filter-select-item">
                   <input class="filter-radio visually-hidden" type="radio" name="housing" value="motel" id="motel">
                   <label class="filter-label" for="motel">
                     <span class="filter-label-radio"></span>
                     <span class="filter-label-text">Мотель</span>
                   </label>
                 </li>
-                <li class="filter-item">
+                <li class="filter-select-item">
                   <input class="filter-radio visually-hidden" type="radio" name="housing" value="apartments" id="apartments">
                   <label class="filter-label" for="apartments">
                     <span class="filter-label-radio"></span>
@@ -118,10 +118,10 @@
 
             <fieldset class="filter-group filter-group-costs">
               <legend class="filter-legend">Стоимость, ₽:</legend>
-              <p class="filter-costs">
+              <div class="filter-costs">
                 <input type="number" name="cost-min" id="cost-min" value="0">
                 <input type="number" name="cost-max" id="cost-max" value="9000">
-              </p>
+              </div>
               <div class="filter-costs-range">
                 <!-- Место для двойного ползунка -->
               </div>

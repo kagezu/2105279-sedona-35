@@ -296,6 +296,10 @@ button-toggle,
   background-repeat: no-repeat;
 }
 
+.filter-costs input {
+  background-color: #F2F2F2;
+}
+
 .filter-button-reset {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
@@ -463,7 +467,7 @@ button-toggle,
 /* Форма подписки *****************************************/
 
 .subscription {
-  padding: 96px 0 101px;
+  padding: 96px 0 104px;
 }
 
 .subscription-title {
@@ -473,7 +477,7 @@ button-toggle,
 
 .subscription-text {
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .subscription-form {
@@ -483,12 +487,13 @@ button-toggle,
 }
 
 .subscription-email {
+  border: none;
   width: 452px;
   padding: 14px 20px;
 }
 
 .subscription-submit {
-  padding: 8px 50px;
+  padding: 7px 50px 9px;
 }
 
 /* Страница с Каталогом ***********************************/
@@ -547,7 +552,7 @@ button-toggle,
 
 .filter-legend {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   padding-left: 0;
 }
 
@@ -556,7 +561,13 @@ button-toggle,
   margin-bottom: 18px;
 }
 
+.filter-select-item:not(:last-child) {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
 .filter-costs {
+  display: flex;
   margin: 0;
 }
 
@@ -575,22 +586,28 @@ button-toggle,
   font: inherit;
   width: 143px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 10px 20px;
+  margin-right: 1px;
 }
 
 .filter-group-button {
   width: 191px;
   margin: 0;
-  margin-left: 68px;
+  margin-left: 70px;
   padding: 0;
-  padding-top: 55px;
+  padding-top: 57px;
   text-align: center;
 }
 
-.filter-button-reset,
 .filter-button-submit {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
+  padding: 8px 50px;
+  border: none;
+}
+
+.filter-button-reset {
+  margin: 0;
   padding: 8px 50px;
   border: none;
 }
@@ -786,6 +803,18 @@ button-toggle,
 .advantages-item-image .decorative-line::after {
   background-color: #ffffff;
 }
+
+.filter-costs input:first-child,
+.subscription-form input:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.filter-costs input:last-child,
+.subscription-form input:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+
 
 .catalog-card-list {
   border-bottom: 1px solid #E6E6E6;

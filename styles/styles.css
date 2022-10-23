@@ -21,8 +21,8 @@
 Интерактивные элементы
   Футер
   Форма
+  Селект
   Кнопки вида
-  Пагинация
 */
 
 /* Подключение шрифтов ************************************/
@@ -186,7 +186,8 @@ button-toggle,
   text-decoration-line: none;
 }
 
-.filter-costs input {
+.filter-cost-min,
+.filter-cost-max {
   font: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -572,7 +573,7 @@ button-toggle,
 
 .filter-group-select {
   min-width: 150px;
-  margin-right: 70px;
+  margin-right: 69px;
 }
 
 .filter-group-costs {
@@ -584,15 +585,16 @@ button-toggle,
 .filter-costs {
   display: flex;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
-.filter-costs input {
+.filter-cost-min,
+.filter-cost-max {
   font: inherit;
-  width: 143px;
+  font-weight: 700;
+  width: 145px;
   box-sizing: border-box;
-  padding: 10px 20px;
-  margin-right: 1px;
+  padding: 10px 20px 11px;
 }
 
 .filter-group-button {
@@ -626,18 +628,22 @@ button-toggle,
 
 .catalog-count {
   margin: 0;
-  margin-right: auto;
+  margin-right: 200px;
   align-self: center;
 }
 
-.catalog-select {
-  width: 292px;
-  box-sizing: border-box;
-  margin-right: 62px;
-  padding: 0 14px;
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 292px;
+  margin-right: auto;
 }
 
 .button-toggle {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
   margin-left: 8px;
   padding: 15px 14px;
 }
@@ -654,7 +660,7 @@ button-toggle,
   gap: 20px;
   width: 1060px;
   margin: 0 auto;
-  padding: 1px 0 40px;
+  padding-bottom: 40px;
   margin-bottom: 39px;
 }
 
@@ -809,17 +815,15 @@ button-toggle,
   background-color: #ffffff;
 }
 
-.filter-costs input:first-child,
-.subscription-form input:first-child {
+.filter-cost-min,
+.subscription-email {
   border-radius: 4px 0 0 4px;
 }
 
-.filter-costs input:last-child,
-.subscription-form input:last-child {
+.filter-cost-max,
+.subscription-submit {
   border-radius: 0 4px 4px 0;
 }
-
-
 
 .catalog-card-list {
   border-bottom: 1px solid #E6E6E6;
@@ -1035,6 +1039,34 @@ button-toggle,
 .toggle-max {
   top: -8px;
   right: -10px;
+}
+
+/* Селект *************************************************/
+
+.catalog-select {
+  font: inherit;
+  width: 100%;
+  padding: 12px 14px;
+  padding-right: 48px;
+  background-image: url("../images/icon/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px top 12px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.catalog-select:hover,
+.catalog-select:focus {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-select:active {
+  border: 2px solid #3F5E72;
+}
+
+.catalog-select:disabled {
+  opacity: 0.3;
 }
 
 /* Кнопки вида ********************************************/

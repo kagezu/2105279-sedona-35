@@ -23,6 +23,7 @@
   Форма
   Селект
   Кнопки вида
+Проверка focus-visible
 */
 
 /* Подключение шрифтов ************************************/
@@ -288,10 +289,6 @@ button-toggle,
 .advantages-item-image {
   color: #ffffff;
   background-color: #82B3D3;
-}
-
-.subscription-email {
-  background-color: #F2F2F2;
 }
 
 .filter-wrapper {
@@ -839,8 +836,9 @@ button-toggle,
 }
 
 .button-brown:hover,
-.button-brown:focus {
+.button-brown:focus-visible {
   background-color: #615048;
+  outline: none;
 }
 
 .button-brown:active {
@@ -854,8 +852,9 @@ button-toggle,
 }
 
 .button-blue:hover,
-.button-blue:focus {
+.button-blue:focus-visible {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .button-blue:active {
@@ -869,8 +868,9 @@ button-toggle,
 }
 
 .button-green:hover,
-.button-green:focus {
+.button-green:focus-visible {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .button-green:active {
@@ -978,14 +978,15 @@ button-toggle,
   opacity: 0.6;
 }
 
-.filter-label:focus,
-.filter-button-reset:focus,
-.breadcrumbs-link:focus {
+.filter-label:focus-visible,
+.filter-button-reset:focus-visible,
+.breadcrumbs-link:focus-visible {
   color: #ffffff;
+  outline: none;
 }
 
-.filter-button-reset:focus {
-  border: 3px solid #83B3D3;
+.filter-button-reset:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .filter-label:active,
@@ -996,6 +997,42 @@ button-toggle,
 
 .filter-button-reset:disabled {
   opacity: 0.1;
+}
+
+.filter-cost-min,
+.filter-cost-max {
+  background-color: #F2F2F2;
+}
+
+.filter-cost-min:hover,
+.filter-cost-max:hover,
+.filter-cost-min:focus,
+.filter-cost-max:focus {
+  background-color: #E6E6E6;
+}
+
+.filter-cost-min:active,
+.filter-cost-max:active {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
+.subscription-email {
+  background-color: #F2F2F2;
+}
+
+.subscription-email:hover {
+  background-color: #E6E6E6;
+}
+
+.subscription-email:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.subscription-email:active {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 /* Ползунок ***********************************************/
@@ -1026,8 +1063,7 @@ button-toggle,
 
 .range-toggle:active,
 .range-toggle:focus {
-
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -1088,4 +1124,41 @@ button-toggle,
 .button-toggle-current,
 .button-toggle:active {
   border: 2px solid #000000;
+}
+
+/* Проверка focus-visible *********************************/
+
+@supports not selector(:focus-visible) {
+
+  .button-brown:focus {
+    background-color: #615048;
+    outline: none;
+  }
+
+  .button-blue:focus {
+    background-color: #68A2CA;
+    outline: none;
+  }
+
+  .button-green:focus {
+    background-color: #6C9E42;
+    outline: none;
+  }
+
+  .filter-label:focus,
+  .filter-button-reset:focus,
+  .breadcrumbs-link:focus {
+    color: #ffffff;
+    outline: none;
+  }
+
+  .filter-button-reset:focus {
+    outline: 3px solid #83B3D3;
+  }
+
+  .subscription-email:focus {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+  }
+
 }

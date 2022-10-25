@@ -1006,9 +1006,14 @@ button-toggle,
 
 .filter-cost-min:hover,
 .filter-cost-max:hover,
-.filter-cost-min:focus,
-.filter-cost-max:focus {
+.filter-cost-min:focus-visible,
+.filter-cost-max:focus-visible {
   background-color: #E6E6E6;
+}
+
+.filter-cost-min:focus-visible,
+.filter-cost-max:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .filter-cost-min:active,
@@ -1033,6 +1038,10 @@ button-toggle,
 .subscription-email:active {
   background-color: #F2F2F2;
   outline: 2px solid #000000;
+}
+
+.subscription-email:not(:placeholder-shown) {
+  outline: none;
 }
 
 /* Ползунок ***********************************************/
@@ -1159,6 +1168,12 @@ button-toggle,
   .subscription-email:focus {
     background-color: #E6E6E6;
     outline: 3px solid #83B3D3;
+  }
+
+  .filter-cost-min:focus,
+  .filter-cost-max:focus {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
   }
 
 }

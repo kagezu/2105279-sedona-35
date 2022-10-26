@@ -82,9 +82,12 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
-  visibility: hidden;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Шрифты *************************************************/
@@ -187,12 +190,15 @@ button-toggle,
   text-decoration-line: none;
 }
 
-.filter-cost-min,
-.filter-cost-max {
+.filter-cost,
+.filter-costs {
   font: inherit;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.filter-cost {
+  font-weight: 700;
 }
 
 .filter-group-button button {
@@ -218,7 +224,8 @@ button-toggle,
 /* Цвета и изображения ************************************/
 
 .navigation-link,
-.catalog-card-link {
+.catalog-card-link,
+.filter-costs {
   color: #000000;
 }
 
@@ -554,7 +561,7 @@ button-toggle,
 
 .filter-legend {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   padding-left: 0;
 }
 
@@ -580,19 +587,43 @@ button-toggle,
 }
 
 .filter-costs {
+  position: relative;
   display: flex;
   margin: 0;
   margin-bottom: 44px;
 }
 
-.filter-cost-min,
-.filter-cost-max {
-  font: inherit;
+.filter-cost {
+  font-family: inherit;
   font-weight: 700;
-  width: 145px;
+  width: 143px;
   box-sizing: border-box;
-  padding: 10px 20px 11px;
+  padding: 12px 20px;
 }
+
+.filter-cost-min {
+  margin-right: 2px;
+}
+
+.filter-costs::before {
+  content: "от";
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 106px;
+  opacity: 0.3;
+}
+
+.filter-costs::after {
+  content: "до";
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  right: 20px;
+  opacity: 0.3;
+}
+
+
 
 .filter-group-button {
   width: 191px;
@@ -814,11 +845,13 @@ button-toggle,
 
 .filter-cost-min,
 .subscription-email {
+  border: none;
   border-radius: 4px 0 0 4px;
 }
 
 .filter-cost-max,
 .subscription-submit {
+  border: none;
   border-radius: 0 4px 4px 0;
 }
 
@@ -978,14 +1011,11 @@ button-toggle,
   opacity: 0.6;
 }
 
-.filter-label:focus-visible,
+.filter-checkbox:focus-visible + .filter-label::before,
+.filter-radio:focus-visible + .filter-label-radio,
 .filter-button-reset:focus-visible,
 .breadcrumbs-link:focus-visible {
   color: #ffffff;
-  outline: none;
-}
-
-.filter-button-reset:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
@@ -999,27 +1029,32 @@ button-toggle,
   opacity: 0.1;
 }
 
-.filter-cost-min,
-.filter-cost-max {
+.filter-cost {
   background-color: #F2F2F2;
+  appearance: textfield;
 }
 
-.filter-cost-min:hover,
-.filter-cost-max:hover,
-.filter-cost-min:focus-visible,
-.filter-cost-max:focus-visible {
+.filter-cost::-webkit-outer-spin-button,
+.filter-cost::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.filter-cost:hover,
+.filter-cost:focus-visible {
   background-color: #E6E6E6;
+  appearance: textfield;
 }
 
-.filter-cost-min:focus-visible,
-.filter-cost-max:focus-visible {
+.filter-cost:focus-visible {
   outline: 3px solid #83B3D3;
+  appearance: textfield;
 }
 
-.filter-cost-min:active,
-.filter-cost-max:active {
+.filter-cost:active {
   background-color: #F2F2F2;
   outline: 2px solid #000000;
+  appearance: textfield;
 }
 
 .subscription-email {
@@ -1154,11 +1189,12 @@ button-toggle,
     outline: none;
   }
 
-  .filter-label:focus,
+  .filter-label-checkbox:focus,
+  .filter-label-radio:focus,
   .filter-button-reset:focus,
   .breadcrumbs-link:focus {
     color: #ffffff;
-    outline: none;
+    outline: 3px solid #83B3D3;
   }
 
   .filter-button-reset:focus {
@@ -1170,10 +1206,10 @@ button-toggle,
     outline: 3px solid #83B3D3;
   }
 
-  .filter-cost-min:focus,
-  .filter-cost-max:focus {
+  .filter-cost:focus {
     outline: 3px solid #83B3D3;
     background-color: #E6E6E6;
+    appearance: textfield;
   }
 
 }

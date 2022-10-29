@@ -147,6 +147,38 @@
         </svg>
       </a>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+            <label class="modal-form-label">
+              <span>Дата заезда:</span>
+              <input class="modal-data" type="date">
+            </label>
+            <label class="modal-form-label">
+              <span>Дата выезда:</span>
+              <input class="modal-data" type="date">
+            </label>
+            <label class="modal-form-label">
+              <span>Взрослые:</span>
+              <input class="modal-data" type="number" min="0">
+            </label>
+            <label class="modal-form-label">
+              <span>Дети:</span>
+              <div class="modal-link-info" title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</div>
+              <input class="modal-data" type="number" min="0">
+            </label>
+            <button class="modal-submit-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>

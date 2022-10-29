@@ -1011,7 +1011,7 @@ button-toggle,
   opacity: 0.6;
 }
 
-.filter-checkbox:focus-visible + .filter-label::before,
+.filter-checkbox:focus-visible + label span:first-child,
 .filter-radio:focus-visible + .filter-label-radio,
 .filter-button-reset:focus-visible,
 .breadcrumbs-link:focus-visible {

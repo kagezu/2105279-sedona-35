@@ -228,6 +228,12 @@ button-toggle,
   font: inherit;
 }
 
+.modal-count {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 /* Цвета и изображения ************************************/
 
 .navigation-link,
@@ -1043,8 +1049,7 @@ button-toggle,
 
 .filter-cost::-webkit-outer-spin-button,
 .filter-cost::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+  display: none;
 }
 
 .filter-cost:hover,
@@ -1283,32 +1288,17 @@ button-toggle,
   padding: 11px 1px;
 }
 
-.modal-info {
-  position: absolute;
-  top: 52px;
-  left: -61px;
-  width: 256px;
+.modal-count {
+  width: 32px;
   box-sizing: border-box;
-  padding: 20px 18px 23px 22px;
-  color: #FFFFFF;
-  background-color: #333333;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  font-weight: 400;
-  text-transform: none;
+  padding: 14px 10px;
+  border: none;
+  appearance: textfield;
 }
 
-.modal-info::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 13px;
-  height: 13px;
-  top: -7px;
-  left: 121px;
-  background-color: #333333;
-  transform: rotate(45deg);
-
+.modal-count::-webkit-outer-spin-button,
+.modal-count::-webkit-inner-spin-button {
+  display: none;
 }
 
 .modal-form-error,
@@ -1323,6 +1313,49 @@ button-toggle,
   border-radius: 50%;
   padding: 3px;
   margin-left: 10px;
+}
+
+.modal-info {
+  position: absolute;
+  top: 52px;
+  left: -61px;
+  width: 256px;
+  box-sizing: border-box;
+  padding: 20px 18px 23px 22px;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-weight: 400;
+  text-transform: none;
+  display: none;
+}
+
+.modal-link-info:hover .modal-info,
+.modal-link-info:focus-visible .modal-info {
+  display: block;
+  outline: none;
+}
+
+.modal-link-info:focus-visible {
+  outline: none;
+}
+
+.modal-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 13px;
+  top: -7px;
+  left: 121px;
+  background-color: #333333;
+  transform: rotate(45deg);
+}
+
+.modal-grown-count,
+.modal-children-count {
+  display: flex;
 }
 
 .modal-submit-button {
@@ -1358,10 +1391,6 @@ button-toggle,
   padding: 3px 20px;
 }
 
-.modal-count::-webkit-outer-spin-button,
-.modal-count::-webkit-inner-spin-button {
-  display: none;
-}
 
 /* Проверка focus-visible *********************************/
 
@@ -1373,6 +1402,7 @@ button-toggle,
   }
 
   .button-blue:focus,
+  .modal-submit-button:focus,
   .modal-submit-button:focus {
     background-color: #68A2CA;
     outline: none;

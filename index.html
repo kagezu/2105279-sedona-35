@@ -166,17 +166,25 @@
             <input class="modal-data" type="text" id="data-out" placeholder="1 сентября 2023">
             <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
             <label class="modal-form-label" for="grown-count">Взрослые:</label>
-            <input class="modal-grown-count modal-count" type="number" min="0" id="grown-count">
+            <div class="modal-grown-count">
+              <button type="button" class="modal-count-button button-decrease"></button>
+              <input class="modal-count" type="number" min="0" value="2" id="grown-count">
+              <button type="button" class="modal-count-button button-increase"></button>
+            </div>
             <label class="modal-form-label modal-form-children" for="children-count">Дети:
-              <div class="modal-link-info">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="modal-link-info" tabindex="0">
+                <svg class="modal-info-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" fill="#fff" />
                 </svg>
                 <div class="modal-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.Дети до 6 лет размещаются бесплатно.
                 </div>
               </div>
             </label>
-            <input class="modal-children-count modal-count" type="number" min="0" id="children-count">
+            <div class="modal-children-count" tabindex="0">
+              <button type="button" class="modal-count-button button-decrease"></button>
+              <input class=" modal-count" type="number" min="0" value="2" id="children-count">
+              <button type="button" class="modal-count-button button-increase"></button>
+            </div>
             <button class="modal-submit-button" type="submit">Найти</button>
           </form>
         </section>

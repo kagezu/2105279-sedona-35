@@ -118,7 +118,8 @@ button-toggle,
 .navigation-button-link,
 .filter-button-submit,
 .filter-button-reset,
-.card-button {
+.card-button,
+.modal-info {
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: none;
@@ -127,7 +128,8 @@ button-toggle,
 
 .navigation-link,
 .filter-legend,
-.modal-form-label {
+.modal-form-label,
+.modal-submit-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -193,7 +195,8 @@ button-toggle,
 }
 
 .filter-cost,
-.filter-costs {
+.filter-costs,
+.modal-data {
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -213,7 +216,9 @@ button-toggle,
   line-height: 78px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link,
+.modal-form-error,
+.modal-form-message {
   font-size: 16px;
   line-height: 21px;
   text-decoration-line: none;
@@ -1199,7 +1204,7 @@ button-toggle,
 
 .modal-close-button {
   position: absolute;
-  top: 64px;
+  top: 65px;
   right: 52px;
   color: #000000;
   background: #F2F2F2;
@@ -1221,7 +1226,9 @@ button-toggle,
 .modal-header {
   text-align: left;
   margin: 0;
+  margin-left: 0.5px;
   margin-bottom: 64px;
+  word-spacing: -0.3px;
 }
 
 .modal-form {
@@ -1233,15 +1240,75 @@ button-toggle,
 .modal-form-label {
   grid-column: 1/2;
   text-transform: capitalize;
+  padding: 11px 1px;
 }
 
 .modal-data {
   grid-column: 2/-1;
+  color: #000000;
+  background-color: #F2F2F2;
+  background-image: url('../images/icon/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 402px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+
+.modal-data::placeholder {
+  opacity: 1;
+  letter-spacing: 0.1px;
+}
+
+.modal-data:hover,
+.modal-data:focus-visible {
+  background: #E6E6E6;
+  background-image: url('../images/icon/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 402px;
+}
+
+.modal-data:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-data:active {
+  outline: 2px solid #000000;
 }
 
 .modal-form-children {
+  position: relative;
   grid-column: 4/5;
   display: flex;
+  padding: 11px 1px;
+}
+
+.modal-info {
+  position: absolute;
+  top: 52px;
+  left: -61px;
+  width: 256px;
+  box-sizing: border-box;
+  padding: 20px 18px 23px 22px;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.modal-info::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 13px;
+  top: -7px;
+  left: 121px;
+  background-color: #333333;
+  transform: rotate(45deg);
+
 }
 
 .modal-form-error,
@@ -1249,12 +1316,52 @@ button-toggle,
   grid-column: 2/-1;
 }
 
+.modal-link-info {
+  width: 20px;
+  height: 20px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 10px;
+}
+
 .modal-submit-button {
   grid-column: 1/-1;
   grid-row: 7/-1;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #83B3D3;
+  border: none;
+  border-radius: 10px;
 }
 
+.modal-submit-button:hover,
+.modal-submit-button:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
 
+.modal-submit-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.modal-form-error {
+  color: #FF5757;
+  margin: 0;
+  padding: 3px 20px;
+}
+
+.modal-form-message {
+  color: #333333;
+  margin: 0;
+  padding: 3px 20px;
+}
+
+.modal-count::-webkit-outer-spin-button,
+.modal-count::-webkit-inner-spin-button {
+  display: none;
+}
 
 /* Проверка focus-visible *********************************/
 
@@ -1265,7 +1372,8 @@ button-toggle,
     outline: none;
   }
 
-  .button-blue:focus {
+  .button-blue:focus,
+  .modal-submit-button:focus {
     background-color: #68A2CA;
     outline: none;
   }

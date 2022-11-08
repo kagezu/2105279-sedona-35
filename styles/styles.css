@@ -99,7 +99,7 @@ img {
   text-align: center;
 }
 
-button-toggle-view,
+.button-toggle,
 .button-brown,
 .button-blue,
 .button-green,
@@ -680,7 +680,7 @@ button-toggle-view,
   margin-right: auto;
 }
 
-.button-toggle-view {
+.button-toggle {
   width: 48px;
   height: 48px;
   box-sizing: border-box;
@@ -1179,23 +1179,23 @@ button-toggle-view,
 
 /* Кнопки вида ********************************************/
 
-.button-toggle-view {
+.button-toggle {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   color: #000000;
 }
 
-.button-toggle-view:hover {
+.button-toggle:hover {
   border: 2px solid #000000;
 }
 
-.button-toggle-view:focus-visible {
+.button-toggle:focus-visible {
   border: 2px solid #68A2CA;
   outline: none;
 }
 
 .button-toggle-current,
-.button-toggle-view:active {
+.button-toggle:active {
   border: 2px solid #000000;
 }
 
@@ -1500,8 +1500,10 @@ button-toggle-view,
     appearance: textfield;
   }
 
+  .button-toggle:focus,
   .catalog-select:focus {
     outline: 2px solid #68A2CA;
+    border: none;
   }
 
   .footer-logo-link:focus,

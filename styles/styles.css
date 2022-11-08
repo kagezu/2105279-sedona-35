@@ -680,7 +680,7 @@ button-toggle,
   margin-right: auto;
 }
 
-.button-toggle {
+.button-toggle-view {
   width: 48px;
   height: 48px;
   box-sizing: border-box;
@@ -1177,23 +1177,23 @@ button-toggle,
 
 /* Кнопки вида ********************************************/
 
-.button-toggle {
+.button-toggle-view {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   color: #000000;
 }
 
-.button-toggle:hover {
+.button-toggle-view:hover {
   border: 2px solid #000000;
 }
 
-.button-toggle:focus-visible {
+.button-toggle-view:focus-visible {
   border: 2px solid #68A2CA;
   outline: none;
 }
 
 .button-toggle-current,
-.button-toggle:active {
+.button-toggle-view:active {
   border: 2px solid #000000;
 }
 

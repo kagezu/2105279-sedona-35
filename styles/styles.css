@@ -757,10 +757,6 @@ button-toggle,
   width: 96px;
 }
 
-five-star {
-  width: 120px;
-}
-
 /* Пагинация **********************************************/
 
 .pagination {
@@ -1315,7 +1311,6 @@ five-star {
 }
 
 .modal-form-children {
-  position: relative;
   grid-column: 4/5;
   display: flex;
   padding: 11px 1px;
@@ -1372,6 +1367,7 @@ five-star {
 }
 
 .modal-link-info {
+  position: relative;
   width: 20px;
   height: 20px;
   background-color: #83B3D3;
@@ -1382,8 +1378,8 @@ five-star {
 
 .modal-info {
   position: absolute;
-  top: 52px;
-  left: -61px;
+  top: 41px;
+  left: -120px;
   width: 256px;
   box-sizing: border-box;
   padding: 20px 18px 23px 22px;

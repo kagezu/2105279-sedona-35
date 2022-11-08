@@ -148,7 +148,7 @@
       </a>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-disabled">
       <div class="modal">
         <button class="modal-close-button">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -159,18 +159,31 @@
         <section class="modal-content">
           <h2 class="modal-header section-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
+
             <label class="modal-form-label" for="data-in">Дата заезда:</label>
-            <input class="modal-data" type="text" id="data-in" placeholder="27 апреля 2020">
+            <input class="modal-data" type="text" id="data-in" placeholder="Укажите дату" name="data-in" value="27 апреля 2020" required>
             <p class="modal-form-error">Мы не можем отправить вас в прошлое.</p>
+
             <label class="modal-form-label" for="data-out">Дата выезда:</label>
-            <input class="modal-data" type="text" id="data-out" placeholder="1 сентября 2023">
+            <input class="modal-data" type="text" id="data-out" placeholder="Укажите дату" name="data-out" value="1 сентября 2023" required>
             <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
+
             <label class="modal-form-label" for="grown-count">Взрослые:</label>
-            <div class="modal-grown-count">
-              <button type="button" class="modal-count-button button-decrease"></button>
-              <input class="modal-count" type="number" min="0" value="2" id="grown-count">
-              <button type="button" class="modal-count-button button-increase"></button>
+
+            <div class="modal-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class="modal-count-number" type="number" min="0" value="2" id="grown-count" name="grown-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
             </div>
+
             <label class="modal-form-label modal-form-children" for="children-count">Дети:
               <div class="modal-link-info" tabindex="0">
                 <svg class="modal-info-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -180,12 +193,23 @@
                 </div>
               </div>
             </label>
-            <div class="modal-children-count" tabindex="0">
-              <button type="button" class="modal-count-button button-decrease"></button>
-              <input class=" modal-count" type="number" min="0" value="2" id="children-count">
-              <button type="button" class="modal-count-button button-increase"></button>
+
+            <div class="modal-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+              </button>
+              <input class=" modal-count-number" type="number" min="0" value="2" id="children-count" name="children-count">
+              <button type="button" class="modal-count-button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                </svg>
+              </button>
             </div>
+
             <button class="modal-submit-button" type="submit">Найти</button>
+
           </form>
         </section>
       </div>

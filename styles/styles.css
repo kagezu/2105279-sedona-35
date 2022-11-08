@@ -99,7 +99,7 @@ img {
   text-align: center;
 }
 
-button-toggle,
+button-toggle-view,
 .button-brown,
 .button-blue,
 .button-green,
@@ -953,8 +953,9 @@ button-toggle,
 }
 
 .footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:focus-visible {
   color: #68A2CA;
+  outline: none;
 }
 
 .footer-social-link:active {
@@ -967,10 +968,11 @@ button-toggle,
 }
 
 .footer-logo-link:hover,
-.footer-logo-link:focus,
+.footer-logo-link:focus-visible,
 .footer-contact-tell:hover,
-.footer-contact-tell:focus {
+.footer-contact-tell:focus-visible {
   color: #756157;
+  outline: none;
 }
 
 .footer-logo-link:active,
@@ -1452,7 +1454,6 @@ button-toggle,
   padding: 3px 20px;
 }
 
-
 /* Проверка focus-visible *********************************/
 
 @supports not selector(:focus-visible) {
@@ -1464,7 +1465,8 @@ button-toggle,
 
   .button-blue:focus,
   .modal-submit-button:focus,
-  .modal-submit-button:focus {
+  .modal-submit-button:focus,
+  .footer-social-link:focus {
     background-color: #68A2CA;
     outline: none;
   }
@@ -1501,4 +1503,11 @@ button-toggle,
   .catalog-select:focus {
     outline: 2px solid #68A2CA;
   }
+
+  .footer-logo-link:focus,
+  .footer-contact-tell:focus {
+    color: #756157;
+    outline: none;
+  }
+
 }

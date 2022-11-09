@@ -469,7 +469,7 @@ img {
 }
 
 .query {
-  padding: 96px 300px 104px;
+  padding: 96px 300px 96px;
 }
 
 .query-title {
@@ -479,12 +479,16 @@ img {
 
 .query-text {
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
 }
 
 .query-button-link {
+  display: block;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 592px;
   margin: 0 auto;
-  padding: 12px 50px;
+  padding: 8px 50px;
 }
 
 /* Форма подписки *****************************************/
@@ -814,6 +818,7 @@ img {
 .footer-contact-tell {
   align-self: center;
   margin: 5px 0;
+  padding: 0 20px;
 }
 
 .footer-logo-link {
@@ -1320,14 +1325,16 @@ img {
 
 .modal-count {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #F2F2F2;
   border-radius: 4px;
+  padding: 0 10px;
 }
 
 .modal-count-number {
-  width: 11px;
+  width: 100%;
+  text-align: center;
   padding: 1px 10px 0;
   margin: 0;
   border: none;

@@ -667,12 +667,13 @@ img {
 
 .catalog-header {
   display: flex;
+  align-items: flex-start;
   padding: 50px 70px 40px;
 }
 
 .catalog-count {
   margin: 0;
-  margin-right: 200px;
+  margin-right: auto;
   align-self: center;
 }
 
@@ -681,7 +682,7 @@ img {
   display: flex;
   align-items: center;
   min-width: 292px;
-  margin-right: auto;
+  margin-right: 62px;
 }
 
 .button-toggle {
@@ -772,8 +773,8 @@ img {
 
 .pagination-link,
 .pagination-space {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   margin: 0;
   margin-right: 8px;
   padding-top: 11px;

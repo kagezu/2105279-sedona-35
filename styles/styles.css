@@ -425,10 +425,12 @@ img {
 .advantages-header-title {
   margin: 0;
   margin-bottom: 25px;
+  word-spacing: -1px;
 }
 
 .advantages-header-text {
   margin: 0;
+  word-spacing: -0.5px;
 }
 
 /* Список преимуществ *************************************/
@@ -467,6 +469,7 @@ img {
 
 .advantages-text {
   margin: 0;
+  letter-spacing: -0.06px;
 }
 
 .query {
@@ -489,7 +492,7 @@ img {
   width: max-content;
   max-width: 592px;
   margin: 0 auto;
-  padding: 8px 50px;
+  padding: 7px 50px 9px;
 }
 
 /* Форма подписки *****************************************/
@@ -501,6 +504,7 @@ img {
 .subscription-title {
   margin: 0;
   margin-bottom: 20px;
+  word-spacing: -1px;
 }
 
 .subscription-text {
@@ -586,6 +590,7 @@ img {
   margin: 0;
   margin-bottom: 33px;
   padding-left: 0;
+  word-spacing: -1px;
 }
 
 .filter-item:not(:last-child) {
@@ -680,7 +685,7 @@ img {
   margin: 0;
   margin-right: 60px;
   align-self: center;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 .select {
@@ -690,6 +695,7 @@ img {
   min-width: 292px;
   margin-left: auto;
   margin-right: 62px;
+  padding-bottom: 4px;
 }
 
 .catalog-view {

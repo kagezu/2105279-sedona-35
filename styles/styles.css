@@ -387,6 +387,7 @@ img {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -539,6 +540,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -549,7 +551,6 @@ img {
   display: block;
   width: 13px;
   height: 20px;
-  margin-right: 10px;
 }
 
 .breadcrumbs-item:not(:first-child)::before {
@@ -557,6 +558,10 @@ img {
   width: 7px;
   margin: 0;
   margin-right: 5px;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
 }
 
 /* Форма фильтра ******************************************/
@@ -667,14 +672,15 @@ img {
 
 .catalog-header {
   display: flex;
-  align-items: flex-start;
-  padding: 50px 70px 40px;
+  padding: 50px 70px 36px;
 }
 
 .catalog-count {
+  min-width: 338px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 60px;
   align-self: center;
+  padding-bottom: 2px;
 }
 
 .select {
@@ -682,7 +688,13 @@ img {
   display: flex;
   align-items: center;
   min-width: 292px;
+  margin-left: auto;
   margin-right: 62px;
+}
+
+.catalog-view {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .button-toggle {
@@ -691,6 +703,7 @@ img {
   box-sizing: border-box;
   margin-left: 8px;
   padding: 15px 14px;
+  margin-bottom: 5px;
 }
 
 .button-toggle-icon {
@@ -766,8 +779,9 @@ img {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
-  margin: 0 auto 60px;
+  margin: 0 auto 52px;
   text-align: center;
 }
 
@@ -777,6 +791,7 @@ img {
   min-height: 60px;
   margin: 0;
   margin-right: 8px;
+  margin-bottom: 8px;
   padding-top: 11px;
   box-sizing: border-box;
 }
@@ -796,6 +811,7 @@ img {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 141px;
   align-self: center;

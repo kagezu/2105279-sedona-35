@@ -971,6 +971,7 @@ img {
 }
 
 .button-disabled {
+  color: #ffffff;
   background-color: #E5E5E5;
 }
 
@@ -1200,7 +1201,7 @@ img {
   outline: 2px solid #3F5E72;
 }
 
-.catalog-select-disabled {
+.catalog-select:disabled {
   color: #000000;
   opacity: 0.3;
 }
@@ -1470,6 +1471,10 @@ img {
 .modal-submit-button:active {
   color: rgba(255, 255, 255, 0.3);
   outline: none;
+}
+
+.modal-submit-button:disabled {
+  opacity: 0.1;
 }
 
 .modal-form-error {

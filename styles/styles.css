@@ -51,7 +51,7 @@
 html {
   height: 100%;
   color: #000000;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -113,7 +113,6 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-
 }
 
 .navigation-button-link,
@@ -174,7 +173,7 @@ img {
 }
 
 .subscription-email {
-  font-family: inherit;
+  font: inherit;
   line-height: 24px;
 }
 
@@ -183,10 +182,6 @@ img {
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
-}
-
-.subscription-email {
-  font: inherit;
 }
 
 .footer-contact-tell {
@@ -246,7 +241,7 @@ img {
 .count-likes,
 .catalog-card-button-favorites {
   color: #ffffff;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .navigation-user-search {
@@ -309,7 +304,7 @@ img {
 .catalog-card-button-favorite,
 .advantages-item-image {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .filter-wrapper {
@@ -320,7 +315,7 @@ img {
 }
 
 .filter-costs input {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .filter-button-reset {
@@ -335,7 +330,7 @@ img {
 
 .catalog-card-rate {
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .catalog-card-stars {
@@ -346,7 +341,7 @@ img {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /* Хедер **************************************************/
@@ -734,7 +729,7 @@ img {
   grid-template-rows: 1fr repeat(3, auto);
   gap: 16px 20px;
   padding: 20px 20px 21px;
-  outline: 1px solid #E6E6E6;
+  outline: 1px solid #e6e6e6;
 }
 
 .catalog-card-link {
@@ -902,7 +897,7 @@ img {
 }
 
 .catalog-card-list {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 /* Интерактивные элементы *********************************/
@@ -911,7 +906,7 @@ img {
 .navigation-link:focus-visible,
 .navigation-user-link:focus-visible,
 .catalog-card-link:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 /* Кнопки *************************************************/
@@ -934,56 +929,56 @@ img {
 
 .button-blue {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-blue:hover,
 .button-blue:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-green {
   color: #ffffff;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-green:hover,
 .button-green:focus-visible {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   outline: none;
 }
 
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-brown:disabled,
 .button-blue:disabled,
 .button-green:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button-disabled {
   color: #ffffff;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* Футер **************************************************/
 
 .footer-social-link {
-  color: #83B3D3;
+  color: #83b3d3;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus-visible {
-  color: #68A2CA;
+  color: #68a2ca;
   outline: none;
 }
 
@@ -1039,8 +1034,6 @@ img {
   border-radius: 50%;
 }
 
-
-
 .filter-checkbox:checked + .filter-label::before {
   background-image: url("../images/icon/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -1073,7 +1066,7 @@ img {
 .filter-button-reset:focus-visible,
 .breadcrumbs-link:focus-visible {
   color: #ffffff;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .filter-label:active,
@@ -1087,7 +1080,7 @@ img {
 }
 
 .filter-cost {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   appearance: textfield;
 }
 
@@ -1098,36 +1091,36 @@ img {
 
 .filter-cost:hover,
 .filter-cost:focus-visible {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   appearance: textfield;
 }
 
 .filter-cost:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   appearance: textfield;
 }
 
 .filter-cost:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
   appearance: textfield;
 }
 
 .subscription-email {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .subscription-email:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .subscription-email:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .subscription-email:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
 }
 
@@ -1148,7 +1141,7 @@ img {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1163,7 +1156,7 @@ img {
 
 .range-toggle:active,
 .range-toggle:focus {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -1187,18 +1180,18 @@ img {
   background-image: url("../images/icon/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 13px top 12px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
 }
 
 .catalog-select:hover,
 .catalog-select:focus-visible {
-  outline: 2px solid #68A2CA;
+  outline: 2px solid #68a2ca;
 }
 
 .catalog-select:active {
-  outline: 2px solid #3F5E72;
+  outline: 2px solid #3f5e72;
 }
 
 .catalog-select:disabled {
@@ -1209,7 +1202,7 @@ img {
 /* Кнопки вида ********************************************/
 
 .button-toggle {
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   color: #000000;
 }
@@ -1219,7 +1212,7 @@ img {
 }
 
 .button-toggle:focus-visible {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
   outline: none;
 }
 
@@ -1252,7 +1245,7 @@ img {
   box-sizing: border-box;
   margin: auto;
   padding: 64px 70px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
@@ -1262,7 +1255,7 @@ img {
   top: 65px;
   right: 52px;
   color: #000000;
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
   border-radius: 50%;
   padding: 15px;
@@ -1270,12 +1263,12 @@ img {
 }
 
 .modal-close-button:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active svg {
@@ -1305,8 +1298,8 @@ img {
 .modal-data {
   grid-column: 2/-1;
   color: #000000;
-  background-color: #F2F2F2;
-  background-image: url('../images/icon/calendar.svg');
+  background-color: #f2f2f2;
+  background-image: url("../images/icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: 402px;
   border: none;
@@ -1322,14 +1315,14 @@ img {
 
 .modal-data:hover,
 .modal-data:focus-visible {
-  background: #E6E6E6;
-  background-image: url('../images/icon/calendar.svg');
+  background: #e6e6e6;
+  background-image: url("../images/icon/calendar.svg");
   background-repeat: no-repeat;
   background-position: 402px;
 }
 
 .modal-data:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-data:active {
@@ -1351,7 +1344,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px;
   padding: 0 10px;
 }
@@ -1362,7 +1355,7 @@ img {
   padding: 1px 10px 0;
   margin: 0;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   appearance: textfield;
 }
 
@@ -1381,7 +1374,7 @@ img {
   height: 20px;
   padding: 0;
   color: rgba(117, 97, 87, 0.3);
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
 }
@@ -1392,7 +1385,7 @@ img {
 }
 
 .modal-count-button:focus-visible {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 .modal-count-button:active {
@@ -1403,7 +1396,7 @@ img {
   position: relative;
   width: 20px;
   height: 20px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 50%;
   padding: 3px;
   margin-left: 10px;
@@ -1416,7 +1409,7 @@ img {
   width: 256px;
   box-sizing: border-box;
   padding: 20px 18px 23px 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -1457,14 +1450,14 @@ img {
   grid-row: 7/-1;
   text-transform: uppercase;
   color: #ffffff;
-  background: #83B3D3;
+  background: #83b3d3;
   border: none;
   border-radius: 10px;
 }
 
 .modal-submit-button:hover,
 .modal-submit-button:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
 }
 
@@ -1478,7 +1471,7 @@ img {
 }
 
 .modal-form-error {
-  color: #FF5757;
+  color: #ff5757;
   margin: 0;
   padding: 3px 20px;
 }
@@ -1492,7 +1485,6 @@ img {
 /* Проверка focus-visible *********************************/
 
 @supports not selector(:focus-visible) {
-
   .button-brown:focus {
     background-color: #615048;
     outline: none;
@@ -1502,12 +1494,12 @@ img {
   .modal-submit-button:focus,
   .modal-submit-button:focus,
   .footer-social-link:focus {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     outline: none;
   }
 
   .button-green:focus {
-    background-color: #6C9E42;
+    background-color: #6c9e42;
     outline: none;
   }
 
@@ -1516,28 +1508,28 @@ img {
   .filter-button-reset:focus,
   .breadcrumbs-link:focus {
     color: #ffffff;
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
   }
 
   .modal-count-button:focus,
   .filter-button-reset:focus {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
   }
 
   .subscription-email:focus {
-    background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
   }
 
   .filter-cost:focus {
-    outline: 3px solid #83B3D3;
-    background-color: #E6E6E6;
+    outline: 3px solid #83b3d3;
+    background-color: #e6e6e6;
     appearance: textfield;
   }
 
   .button-toggle:focus,
   .catalog-select:focus {
-    outline: 2px solid #68A2CA;
+    outline: 2px solid #68a2ca;
     border: none;
   }
 
@@ -1546,5 +1538,4 @@ img {
     color: #756157;
     outline: none;
   }
-
 }

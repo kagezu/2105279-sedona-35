@@ -111,7 +111,7 @@
         <h2 class="subscription-title section-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
-          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail" required>
           <input class="subscription-submit button-blue" type="submit" value="Подписаться">
         </form>
       </section>
@@ -162,11 +162,11 @@
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
 
             <label class="modal-form-label" for="data-in">Дата заезда:</label>
-            <input class="modal-data" type="text" id="data-in" placeholder="Укажите дату" name="data-in" value="27 апреля 2020" required>
+            <input class="modal-data" type="text" id="data-in" placeholder="Укажите дату" name="data-in" required>
             <p class="modal-form-error">Мы не можем отправить вас в прошлое.</p>
 
             <label class="modal-form-label" for="data-out">Дата выезда:</label>
-            <input class="modal-data" type="text" id="data-out" placeholder="Укажите дату" name="data-out" value="1 сентября 2023" required>
+            <input class="modal-data" type="text" id="data-out" placeholder="Укажите дату" name="data-out" required>
             <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
 
             <label class="modal-form-label" for="grown-count">Взрослые:</label>

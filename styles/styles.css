@@ -20,7 +20,7 @@
 
 Декоративные элементы
 Интерактивные элементы
-  Футер
+  Хедер и Футер
   Форма
   Селект
   Кнопки вида
@@ -233,6 +233,7 @@ img {
 /* Цвета и изображения ************************************/
 
 .navigation-link,
+.navigation-user-link,
 .catalog-card-link,
 .filter-costs {
   color: #000000;
@@ -242,18 +243,6 @@ img {
 .catalog-card-button-favorites {
   color: #ffffff;
   background-color: #7db54f;
-}
-
-.navigation-user-search {
-  background-image: url("../images/icon/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navigation-user-like {
-  background-image: url("../images/icon/likes.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .hero {
@@ -390,8 +379,9 @@ img {
 
 .navigation-user-link {
   display: block;
+  box-sizing: border-box;
   width: 44px;
-  padding: 32px 0;
+  padding: 22px 12px 19px;
 }
 
 .navigation-button-link {
@@ -902,13 +892,6 @@ img {
 
 /* Интерактивные элементы *********************************/
 
-.navigation-logo-link:focus-visible,
-.navigation-link:focus-visible,
-.navigation-user-link:focus-visible,
-.catalog-card-link:focus-visible {
-  outline: 3px solid #83b3d3;
-}
-
 /* Кнопки *************************************************/
 
 .button-brown {
@@ -970,7 +953,7 @@ img {
   background-color: #e5e5e5;
 }
 
-/* Футер **************************************************/
+/* Хедер и Футер ******************************************/
 
 .footer-social-link {
   color: #83b3d3;
@@ -991,6 +974,11 @@ img {
   color: #000000;
 }
 
+.navigation-logo-link:hover,
+.navigation-link:hover,
+.navigation-user-link:hover,
+.navigation-link:focus-visible,
+.navigation-user-link:focus-visible,
 .footer-logo-link:hover,
 .footer-logo-link:focus-visible,
 .footer-contact-tell:hover,
@@ -999,6 +987,16 @@ img {
   outline: none;
 }
 
+.navigation-logo-link:focus-visible,
+.catalog-card-link:hover,
+.catalog-card-link:focus-visible {
+  color: #756157;
+  outline: 3px solid #83b3d3;
+}
+
+.navigation-logo-link:active,
+.navigation-link:active,
+.navigation-user-link:active,
 .footer-logo-link:active,
 .footer-contact-tell:active {
   color: rgba(117, 97, 87, 0.3);

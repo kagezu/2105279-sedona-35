@@ -1075,10 +1075,6 @@ img {
   opacity: 0.3;
 }
 
-.filter-button-reset:disabled {
-  opacity: 0.1;
-}
-
 .filter-cost {
   background-color: #f2f2f2;
   appearance: textfield;
@@ -1128,6 +1124,15 @@ img {
   outline: none;
 }
 
+.filter-label:disabled,
+.filter-checkbox:disabled,
+.filter-radio:disabled,
+.filter-cost:disabled,
+.subscription-email:disabled,
+.filter-button-reset:disabled {
+  opacity: 0.1;
+}
+
 /* Ползунок ***********************************************/
 
 /* Range */
@@ -1154,8 +1159,8 @@ img {
   cursor: pointer;
 }
 
-.range-toggle:active,
-.range-toggle:focus {
+.range-toggle:focus-visible,
+.range-toggle:active {
   outline: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
@@ -1531,6 +1536,11 @@ img {
   .catalog-select:focus {
     outline: 2px solid #68a2ca;
     border: none;
+  }
+
+  .range-toggle:focus {
+    outline: 2px solid #83b3d3;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   }
 
   .footer-logo-link:focus,

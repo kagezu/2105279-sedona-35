@@ -11,8 +11,8 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a class="navigation-logo-link" href="./index.html">
-          <img class="navigation-logo" src="./images/logo/logo-sedona.png" width="140" height="70" alt="Логотип города Седона">
+        <a class="navigation-logo-link" href="./index.html" tabindex="-1">
+          <img class="navigation-logo" src="./images/logo/logo-sedona.png" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
           <li>
@@ -27,12 +27,18 @@
         </ul>
         <ul class="navigation-user">
           <li>
-            <a class="navigation-user-link navigation-user-search" href="#">
+            <a class="navigation-user-link" href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li>
             <a class="navigation-user-link navigation-user-like" href="#">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.9 2c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
               <span class="visually-hidden">Избранное</span>
               <span class="count-likes">12</span>
             </a>
@@ -178,7 +184,7 @@
         <div class="catalog-card-list">
           <article class="catalog-card-item">
             <a class="catalog-card-link" href="./catalog.html">
-              <img class="catalog-card-image" src="./images/hotel/hotel-1.jpg" width="300" height="212" alt="Пещера">
+              <img class="catalog-card-image" src="./images/hotel/hotel-1.jpg" width="300" height="212" alt="Пещера.">
               <h3 class="catalog-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="catalog-card-type">Гостиница</p>
@@ -191,7 +197,7 @@
 
           <article class="catalog-card-item">
             <a class="catalog-card-link" href="./catalog.html">
-              <img class="catalog-card-image" src="./images/hotel/hotel-2.jpg" width="300" height="212" alt="Скалы и радуга">
+              <img class="catalog-card-image" src="./images/hotel/hotel-2.jpg" width="300" height="212" alt="Скалы и радуга.">
               <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="catalog-card-type">Гостиница</p>
@@ -204,7 +210,7 @@
 
           <article class="catalog-card-item">
             <a class="catalog-card-link" href="./catalog.html">
-              <img class="catalog-card-image" src="./images/hotel/hotel-3.jpg" width="300" height="212" alt="Скалы и небо">
+              <img class="catalog-card-image" src="./images/hotel/hotel-3.jpg" width="300" height="212" alt="Скалы и небо.">
               <h3 class="catalog-card-title">Desert Quail Inn</h3>
             </a>
             <p class="catalog-card-type">Гостиница</p>
@@ -217,7 +223,7 @@
 
           <article class="catalog-card-item">
             <a class="catalog-card-link" href="./catalog.html">
-              <img class="catalog-card-image" src="./images/hotel/hotel-4.jpg" width="300" height="212" alt="Скалы и звёзды">
+              <img class="catalog-card-image" src="./images/hotel/hotel-4.jpg" width="300" height="212" alt="Скалы и звёзды.">
               <h3 class="catalog-card-title">GreenTree Inn</h3>
             </a>
             <p class="catalog-card-type">Гостиница</p>
@@ -243,7 +249,7 @@
         <h2 class="subscription-title section-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
-          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="subscription-email" type="email" name="email" placeholder="Ваш e-mail" required>
           <input class="subscription-submit button-blue" type="submit" value="Подписаться">
         </form>
       </section>

@@ -1,13 +1,17 @@
 const modal = document.querySelector('.modal-container');
-const popupOpenButton = document.querySelector('.navigation-button-link');
-const popupCloseButton = document.querySelector('.modal-close-button');
+const modalOpenButton = document.querySelector('.navigation-button-link');
+const modalCloseButton = document.querySelector('.modal-close-button');
+const modalForm = document.querySelector('.modal-form');
 
-popupOpenButton.addEventListener('click', (evt) => {
+// Открытие модального окна с формой
+modalOpenButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modal.classList.remove('modal-disabled');
 });
 
-popupCloseButton.addEventListener('click', (evt) => {
+// Закрытие модального окна и сброс формы
+modalCloseButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modal.classList.add('modal-disabled');
+  modalForm.reset();
 });
